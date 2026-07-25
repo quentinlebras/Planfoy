@@ -18,18 +18,19 @@ export function haversineKm(a: LatLon, b: LatLon): number {
 
 const coords = (p: LatLon) => `${p.lat},${p.lon}`;
 
-export function googleDirectionsUrl(from: LatLon, to: LatLon): string {
+/** `origin` is either a postal address or a "lat,lon" pair. */
+export function googleDirectionsUrl(origin: string, to: LatLon): string {
   const params = new URLSearchParams({
     api: '1',
-    origin: coords(from),
+    origin,
     destination: coords(to),
     travelmode: 'driving',
   });
   return `https://www.google.com/maps/dir/?${params.toString()}`;
 }
 
-export function appleDirectionsUrl(from: LatLon, to: LatLon): string {
-  return `https://maps.apple.com/?saddr=${coords(from)}&daddr=${coords(to)}&dirflg=d`;
+export function appleDirectionsUrl(origin: string, to: LatLon): string {
+  return `https://maps.apple.com/?saddr=${encodeURIComponent(origin)}&daddr=${coords(to)}&dirflg=d`;
 }
 
 export function wazeUrl(to: LatLon): string {

@@ -9,14 +9,14 @@ import {
   type LngLatBoundsLike,
 } from 'maplibre-gl';
 import { GROUP_BY_ID } from '../data/taxonomy';
-import { HOME_LABEL } from '../data/home';
+import { HOME_LABEL, HOME_SHORT_ADDRESS } from '../data/home';
 import { BASEMAP_BY_ID, type BasemapId } from '../lib/mapStyles';
-import type { LatLon } from '../lib/geo';
+import type { Home } from '../lib/useHome';
 import type { Place } from '../types';
 
 interface Props {
   places: Place[];
-  home: LatLon;
+  home: Home;
   basemap: BasemapId;
   activeId: string | null;
   onSelect: (id: string) => void;
@@ -57,10 +57,15 @@ function markerElement(place: Place, onSelect: (id: string) => void): HTMLElemen
   return el;
 }
 
-function homeElement(): HTMLElement {
+function homeElement(approximate: boolean): HTMLElement {
   const el = document.createElement('div');
   el.className = 'pin pin--home';
-  el.setAttribute('title', HOME_LABEL);
+  el.setAttribute(
+    'title',
+    approximate
+      ? `${HOME_LABEL} — ${HOME_SHORT_ADDRESS} (repère au centre du village)`
+      : `${HOME_LABEL} — ${HOME_SHORT_ADDRESS}`,
+  );
   el.innerHTML = `<span class="pin__scale"><span class="pin__body"><span class="pin__emoji">🏡</span></span><span class="pin__tip"></span></span>`;
   return el;
 }
@@ -188,7 +193,7 @@ export function MapView({ places, home, basemap, activeId, onSelect, onMapReady 
     if (!map) return;
     if (!homeMarkerRef.current) {
       homeMarkerRef.current = new Marker({
-        element: homeElement(),
+        element: homeElement(home.approximate),
         anchor: 'bottom',
       })
         .setLngLat([home.lon, home.lat])

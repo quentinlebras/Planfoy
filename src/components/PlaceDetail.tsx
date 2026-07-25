@@ -8,7 +8,6 @@ import {
   googleDirectionsUrl,
   googlePlaceUrl,
   wazeUrl,
-  type LatLon,
 } from '../lib/geo';
 import { usePhotos } from '../lib/usePhotos';
 import { Lightbox } from './Lightbox';
@@ -16,7 +15,8 @@ import type { Place, PlaceEvent } from '../types';
 
 interface Props {
   place: Place;
-  home: LatLon;
+  /** Routing origin: the rental's address, or "lat,lon" if it was overridden. */
+  origin: string;
   onClose: () => void;
   onShowOnMap: () => void;
 }
@@ -38,7 +38,7 @@ function duringTrip(event: PlaceEvent): boolean {
   return event.start <= TRIP_END && event.end >= TRIP_START;
 }
 
-export function PlaceDetail({ place, home, onClose, onShowOnMap }: Props) {
+export function PlaceDetail({ place, origin, onClose, onShowOnMap }: Props) {
   const group = GROUP_BY_ID[place.group];
   const { photos, state } = usePhotos(place);
   const [lightbox, setLightbox] = useState<number | null>(null);
@@ -95,7 +95,7 @@ export function PlaceDetail({ place, home, onClose, onShowOnMap }: Props) {
           <div className="sheet__actions">
             <a
               className="btn btn--primary"
-              href={googleDirectionsUrl(home, destination)}
+              href={googleDirectionsUrl(origin, destination)}
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -114,7 +114,7 @@ export function PlaceDetail({ place, home, onClose, onShowOnMap }: Props) {
             </a>
             <a
               className="btn"
-              href={appleDirectionsUrl(home, destination)}
+              href={appleDirectionsUrl(origin, destination)}
               target="_blank"
               rel="noreferrer noopener"
             >

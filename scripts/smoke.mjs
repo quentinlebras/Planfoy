@@ -6,7 +6,7 @@
 import { chromium } from 'playwright';
 import { mkdir } from 'node:fs/promises';
 
-const BASE = process.env.SMOKE_URL ?? 'http://localhost:4173/planfoy/';
+const BASE = process.env.SMOKE_URL ?? 'http://localhost:4173/Planfoy/';
 const OUT = 'screenshots';
 
 const errors = [];

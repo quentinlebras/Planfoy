@@ -1,6 +1,6 @@
 import { META, PLACES, SOURCES } from '../data/places';
 import { GROUPS } from '../data/taxonomy';
-import { HOME_SHARE_URL, TRIP_END, TRIP_START } from '../data/home';
+import { HOME_SHARE_URL, HOME_SHORT_ADDRESS, TRIP_END, TRIP_START } from '../data/home';
 
 interface Props {
   onClose: () => void;
@@ -24,7 +24,7 @@ export function InfoDialog({ onClose }: Props) {
       <div className="modal__panel modal__panel--wide">
         <h2>Séjour du {formatDay(TRIP_START)} au {formatDay(TRIP_END)} 2026</h2>
         <p className="muted">
-          Base : <strong>{META.base}</strong> ·{' '}
+          Base : <strong>{HOME_SHORT_ADDRESS}</strong> ({META.base}) ·{' '}
           <a href={HOME_SHARE_URL} target="_blank" rel="noreferrer noopener">
             voir la location ↗
           </a>

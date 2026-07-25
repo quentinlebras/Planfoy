@@ -8,11 +8,11 @@ import { OriginDialog } from './components/OriginDialog';
 import { EMPTY_FILTERS, FilterBar, type Filters } from './components/FilterBar';
 import { InfoDialog } from './components/InfoDialog';
 import { PLACES, PLACE_BY_ID, withDistances } from './data/places';
-import { DEFAULT_HOME } from './data/home';
 import { GROUPS } from './data/taxonomy';
 import { BASEMAPS, type BasemapId } from './lib/mapStyles';
-import { googleDirectionsUrl, type LatLon } from './lib/geo';
+import { googleDirectionsUrl } from './lib/geo';
 import { useLocalStorage } from './lib/useLocalStorage';
+import { routingOrigin, useHome } from './lib/useHome';
 import type { Place } from './types';
 
 type View = 'map' | 'list';
@@ -43,7 +43,7 @@ function placeIdFromHash(): string | null {
 }
 
 export default function App() {
-  const [home, setHome] = useLocalStorage<LatLon>('planfoy:home:v1', DEFAULT_HOME);
+  const { home, override: setHome, reset: resetHome } = useHome();
   const [basemap, setBasemap] = useLocalStorage<BasemapId>('planfoy:basemap:v1', 'plan');
   const [filters, setFilters] = useState<Filters>(EMPTY_FILTERS);
   const [view, setView] = useState<View>('map');
@@ -54,6 +54,7 @@ export default function App() {
   const [infoOpen, setInfoOpen] = useState(false);
   const mapRef = useRef<MapController | null>(null);
 
+  const origin = routingOrigin(home);
   const places = useMemo(() => withDistances(PLACES, home), [home]);
   const visible = useMemo(
     () => places.filter((place) => matches(place, filters)),
@@ -98,12 +99,12 @@ export default function App() {
   const itinerary = useCallback(
     (place: Place) => {
       window.open(
-        googleDirectionsUrl(home, { lat: place.lat, lon: place.lon }),
+        googleDirectionsUrl(origin, { lat: place.lat, lon: place.lon }),
         '_blank',
         'noopener,noreferrer',
       );
     },
-    [home],
+    [origin],
   );
 
   const locateFromList = useCallback(
@@ -260,7 +261,7 @@ export default function App() {
       {detail && (
         <PlaceDetail
           place={detail}
-          home={home}
+          origin={origin}
           onClose={() => setDetailId(null)}
           onShowOnMap={() => {
             setDetailId(null);
@@ -272,7 +273,12 @@ export default function App() {
       )}
 
       {originOpen && (
-        <OriginDialog home={home} onSave={setHome} onClose={() => setOriginOpen(false)} />
+        <OriginDialog
+          home={home}
+          onSave={setHome}
+          onReset={resetHome}
+          onClose={() => setOriginOpen(false)}
+        />
       )}
       {infoOpen && <InfoDialog onClose={() => setInfoOpen(false)} />}
     </div>

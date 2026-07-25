@@ -20,8 +20,14 @@ Built as a static single-page app, so it is free to host and needs no API key.
 - **List view** — sortable by drive time, straight-line distance, name or universe.
 - **Place sheet** — photo gallery with lightbox, opening hours, dated 2026 events (those falling
   inside the trip window are highlighted), warnings, audience, official links.
-- **Directions** — Google Maps, Waze and Apple Maps links from the rental to each place. The origin
-  is adjustable in the UI (stored in `localStorage`) and defaults to the center of Planfoy.
+- **Directions** — Google Maps, Waze and Apple Maps links from the rental to each place. Routing
+  uses the rental's postal address (`src/data/home.ts`) rather than coordinates, so the providers
+  resolve the exact building themselves. Anyone can start from somewhere else via the 🧭 button,
+  which is stored per browser.
+- **Home pin** — the map marker needs coordinates, so the address is geocoded once per browser
+  against Nominatim and cached for 90 days; until then the pin sits at the village center and says
+  so. Routing never depends on that lookup. To skip it entirely, replace `FALLBACK_PIN` in
+  `src/data/home.ts` with the exact coordinates.
 - **Shareable links** — the address bar carries `#/lieu/<id>`, which opens straight onto a place.
 - Responsive, keyboard accessible, light and dark themes.
 
@@ -69,7 +75,7 @@ npm run smoke
 ## Deployment
 
 Pushing to `main` builds the app and publishes it to GitHub Pages via
-`.github/workflows/deploy.yml`. The Vite `base` is `/planfoy/`; override it with the `VITE_BASE`
+`.github/workflows/deploy.yml`. The Vite `base` is `/Planfoy/`; override it with the `VITE_BASE`
 environment variable when serving from a different path.
 
 ## Credits

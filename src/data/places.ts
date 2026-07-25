@@ -2,7 +2,7 @@ import { haversineKm, type LatLon } from '../lib/geo';
 import type { Place, PlaceEvent } from '../types';
 import raw from './recommandations.json';
 import { CATEGORIES, FALLBACK_CATEGORY } from './taxonomy';
-import { DEFAULT_HOME, TRIP_END, TRIP_START } from './home';
+import { FALLBACK_PIN, TRIP_END, TRIP_START } from './home';
 
 interface RawEvent {
   date?: string;
@@ -109,7 +109,7 @@ function build(place: RawPlace, home: LatLon): Place {
   };
 }
 
-export const PLACES: Place[] = (raw.places as RawPlace[]).map((p) => build(p, DEFAULT_HOME));
+export const PLACES: Place[] = (raw.places as RawPlace[]).map((p) => build(p, FALLBACK_PIN));
 
 export const PLACE_BY_ID = new Map(PLACES.map((p) => [p.id, p]));
 
