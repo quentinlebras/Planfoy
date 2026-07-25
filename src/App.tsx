@@ -5,37 +5,18 @@ import { ListView } from './components/ListView';
 import { PlaceCard } from './components/PlaceCard';
 import { PlaceDetail } from './components/PlaceDetail';
 import { OriginDialog } from './components/OriginDialog';
-import { EMPTY_FILTERS, FilterBar, type Filters } from './components/FilterBar';
+import { FilterBar } from './components/FilterBar';
 import { InfoDialog } from './components/InfoDialog';
 import { PLACES, PLACE_BY_ID, withDistances } from './data/places';
 import { GROUPS } from './data/taxonomy';
 import { BASEMAPS, type BasemapId } from './lib/mapStyles';
 import { googleDirectionsUrl } from './lib/geo';
+import { EMPTY_FILTERS, matches, type Filters } from './lib/filters';
 import { useLocalStorage } from './lib/useLocalStorage';
 import { routingOrigin, useHome } from './lib/useHome';
 import type { Place } from './types';
 
 type View = 'map' | 'list';
-
-function normalize(text: string): string {
-  return text.toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu, '');
-}
-
-function matches(place: Place, filters: Filters): boolean {
-  if (filters.groups.length > 0 && !filters.groups.includes(place.group)) return false;
-  if (filters.categories.length > 0 && !filters.categories.includes(place.category)) return false;
-  if (place.driveMin > filters.maxDrive) return false;
-  if (filters.kidsOnly && !place.kidFriendly) return false;
-  if (filters.eventsOnly && place.tripEvents.length === 0) return false;
-  const query = normalize(filters.query.trim());
-  if (query.length > 0) {
-    const haystack = normalize(
-      [place.name, place.area, place.categoryLabel, place.whyGo, place.audience].join(' '),
-    );
-    if (!query.split(/\s+/).every((token) => haystack.includes(token))) return false;
-  }
-  return true;
-}
 
 function placeIdFromHash(): string | null {
   const match = window.location.hash.match(/^#\/lieu\/([a-z0-9]+)$/i);

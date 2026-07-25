@@ -75,8 +75,12 @@ npm run smoke
 ## Deployment
 
 Pushing to `main` builds the app and publishes it to GitHub Pages via
-`.github/workflows/deploy.yml`. The Vite `base` is `/Planfoy/`; override it with the `VITE_BASE`
-environment variable when serving from a different path.
+`.github/workflows/deploy.yml`. The Vite `base` is `/Planfoy/`, matching the repository name;
+override it with the `VITE_BASE` environment variable when serving from a different path.
+
+Pages has to be enabled once by hand, before the first successful run: **Settings › Pages › Build
+and deployment › Source → GitHub Actions**. The workflow token is not allowed to create the Pages
+site itself (`Resource not accessible by integration`), only to deploy to an existing one.
 
 ## Credits
 

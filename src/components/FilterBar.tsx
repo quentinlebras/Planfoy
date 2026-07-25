@@ -2,47 +2,19 @@ import { useMemo, useState } from 'react';
 import { CATEGORIES, GROUPS } from '../data/taxonomy';
 import { MAX_DRIVE_MIN, PLACES } from '../data/places';
 import { formatDrive } from '../lib/geo';
+import {
+  DRIVE_STEPS,
+  EMPTY_FILTERS,
+  isDefaultFilters,
+  toggle,
+  type Filters,
+} from '../lib/filters';
 import type { GroupId } from '../types';
-
-export interface Filters {
-  groups: GroupId[];
-  categories: string[];
-  maxDrive: number;
-  kidsOnly: boolean;
-  eventsOnly: boolean;
-  query: string;
-}
-
-export const EMPTY_FILTERS: Filters = {
-  groups: [],
-  categories: [],
-  maxDrive: MAX_DRIVE_MIN,
-  kidsOnly: false,
-  eventsOnly: false,
-  query: '',
-};
-
-export function isDefaultFilters(filters: Filters): boolean {
-  return (
-    filters.groups.length === 0 &&
-    filters.categories.length === 0 &&
-    filters.maxDrive === MAX_DRIVE_MIN &&
-    !filters.kidsOnly &&
-    !filters.eventsOnly &&
-    filters.query.trim() === ''
-  );
-}
-
-const DRIVE_STEPS = [15, 25, 35, 45, 60, 90, MAX_DRIVE_MIN];
 
 interface Props {
   filters: Filters;
   onChange: (filters: Filters) => void;
   resultCount: number;
-}
-
-function toggle<T>(list: T[], value: T): T[] {
-  return list.includes(value) ? list.filter((v) => v !== value) : [...list, value];
 }
 
 export function FilterBar({ filters, onChange, resultCount }: Props) {

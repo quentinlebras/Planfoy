@@ -19,19 +19,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: 24
           cache: npm
       - run: npm ci
       - run: npm run lint
       - run: npm run build
-      # enablement turns Pages on for the repository on the first run, so no
-      # manual switch in Settings is needed.
+      # Requires Pages to be enabled once, with "GitHub Actions" as the source
+      # (Settings > Pages). The workflow token cannot create the site itself.
       - uses: actions/configure-pages@v5
-        with:
-          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
