@@ -1,0 +1,1485 @@
+{
+  "meta": {
+    "title": "Planfoy, Pilat et Saint-Étienne - recommandations consolidées",
+    "generated_on": "2026-07-25",
+    "trip_window_assumed": {
+      "start": "2026-08-01",
+      "end": "2026-08-09"
+    },
+    "base": "Planfoy, Loire, France",
+    "scope": "20 adresses sélectionnées à Saint-Étienne + recommandations nature, baignade, guinguettes et enfants de la conversation",
+    "important_method_note": "Les coordonnées marquées approximate sont des points de repère et non des entrées de parking. Les horaires et événements saisonniers doivent être revérifiés 24-48 h avant déplacement.",
+    "source_quality": "Priorité aux sites officiels 2026. Certaines recommandations antérieures non confirmées sont explicitement signalées.",
+    "image_link_method": "Chaque lieu contient 3 liens de recherche d'images et, lorsque disponible, un lien officiel pouvant contenir des photos."
+  },
+  "saint_etienne_top20_ids": [
+    "ste01",
+    "ste02",
+    "ste03",
+    "ste04",
+    "ste05",
+    "ste06",
+    "ste07",
+    "ste08",
+    "ste09",
+    "ste10",
+    "ste11",
+    "ste12",
+    "ste13",
+    "ste14",
+    "ste15",
+    "ste16",
+    "ste17",
+    "ste18",
+    "ste19",
+    "ste20"
+  ],
+  "places": [
+    {
+      "id": "ste01",
+      "name": "Cité du design et Galerie nationale du design",
+      "category": "design_museum",
+      "city_or_area": "",
+      "gps": {
+        "lat": 45.4501,
+        "lon": 4.3872,
+        "precision": "site"
+      },
+      "approx_drive_from_planfoy_min": 20,
+      "audience": "avec ou sans enfant",
+      "why_go": "Le lieu le plus pertinent pour un designer: architecture industrielle, expositions, La Platine et nouvelle Galerie nationale du design.",
+      "opening_hours": "Expositions généralement mar-dim; vérifier la billetterie pour les horaires d'été.",
+      "dated_events_2026": [
+        {
+          "start": "2026-04-29",
+          "end": "2026-10-04",
+          "title": "Topographies du vase / Local Tools et autres expositions estivales"
+        }
+      ],
+      "official_or_reference_url": "https://www.citedudesign.com/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Cit%C3%A9%20du%20design%20et%20Galerie%20nationale%20du%20design",
+        "https://www.bing.com/images/search?q=Cit%C3%A9%20du%20design%20et%20Galerie%20nationale%20du%20design",
+        "https://commons.wikimedia.org/w/index.php?search=Cit%C3%A9%20du%20design%20et%20Galerie%20nationale%20du%20design&title=Special:MediaSearch&type=image",
+        "https://www.citedudesign.com/"
+      ],
+      "verification_status": "verified",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "ste02",
+      "name": "MAMC+ Musée d'art moderne et contemporain",
+      "category": "museum",
+      "city_or_area": "",
+      "gps": {
+        "lat": 45.4746,
+        "lon": 4.374,
+        "precision": "site"
+      },
+      "approx_drive_from_planfoy_min": 25,
+      "audience": "plutôt adultes, possible avec enfants",
+      "why_go": "La collection culturelle la plus forte du secteur: art moderne, contemporain et design, avec de grandes expositions temporaires.",
+      "opening_hours": "Mar-dim, généralement 10:00-18:00; vérifier avant départ.",
+      "dated_events_2026": [
+        {
+          "start": "2026-06-27",
+          "end": "2027-01-03",
+          "title": "Frank Stella. Minimal / Maximal et Flying Colors"
+        }
+      ],
+      "official_or_reference_url": "https://mamc.saint-etienne.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=MAMC%2B%20Mus%C3%A9e%20d%27art%20moderne%20et%20contemporain",
+        "https://www.bing.com/images/search?q=MAMC%2B%20Mus%C3%A9e%20d%27art%20moderne%20et%20contemporain",
+        "https://commons.wikimedia.org/w/index.php?search=MAMC%2B%20Mus%C3%A9e%20d%27art%20moderne%20et%20contemporain&title=Special:MediaSearch&type=image",
+        "https://mamc.saint-etienne.fr/"
+      ],
+      "verification_status": "verified",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "ste03",
+      "name": "Couriot - Musée de la Mine et parc Joseph-Sanguedolce",
+      "category": "museum_and_park",
+      "city_or_area": "",
+      "gps": {
+        "lat": 45.4343,
+        "lon": 4.3738,
+        "precision": "site"
+      },
+      "approx_drive_from_planfoy_min": 20,
+      "audience": "excellent avec enfants",
+      "why_go": "Le site le plus spectaculaire de Sainté: chevalement, galerie reconstituée, grand parc et guinguette estivale.",
+      "opening_hours": "Musée généralement mar-dim; parc en accès libre.",
+      "dated_events_2026": [
+        {
+          "date": "2026-08-01",
+          "time": "soir",
+          "title": "Before de Couriot, Ciné Couriot #2 / soirée La Boum #3, selon programme"
+        },
+        {
+          "date": "2026-08-06",
+          "time": "20:00",
+          "title": "Concert Diwan Roots"
+        },
+        {
+          "date": "2026-08-07",
+          "time": "18:00",
+          "title": "Open air électro Train de nuit"
+        },
+        {
+          "date": "2026-08-08",
+          "time": "20:00",
+          "title": "Concert Ashed Winter"
+        }
+      ],
+      "official_or_reference_url": "https://musee-mine.saint-etienne.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Couriot%20-%20Mus%C3%A9e%20de%20la%20Mine%20et%20parc%20Joseph-Sanguedolce",
+        "https://www.bing.com/images/search?q=Couriot%20-%20Mus%C3%A9e%20de%20la%20Mine%20et%20parc%20Joseph-Sanguedolce",
+        "https://commons.wikimedia.org/w/index.php?search=Couriot%20-%20Mus%C3%A9e%20de%20la%20Mine%20et%20parc%20Joseph-Sanguedolce&title=Special:MediaSearch&type=image",
+        "https://musee-mine.saint-etienne.fr/"
+      ],
+      "verification_status": "verified",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "ste04",
+      "name": "Musée d'Art et d'Industrie",
+      "category": "museum",
+      "city_or_area": "",
+      "gps": {
+        "lat": 45.4306,
+        "lon": 4.3899,
+        "precision": "site"
+      },
+      "approx_drive_from_planfoy_min": 20,
+      "audience": "excellent avec enfants de 4 ans",
+      "why_go": "Rubans, armes et surtout nouveau parcours vélo. Bon plan pluie et activité Méli Vélo pour les 4-6 ans.",
+      "opening_hours": "Mar-dim 10:00-18:00 pendant l'été 2026.",
+      "dated_events_2026": [
+        {
+          "date": "2026-08-01",
+          "time": "14:00-15:00",
+          "title": "Méli Vélo, 4-6 ans"
+        },
+        {
+          "date": "2026-08-07",
+          "time": "14:00-15:30",
+          "title": "Arcimboldo vélo, 6-8 ans"
+        }
+      ],
+      "official_or_reference_url": "https://mai.saint-etienne.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Mus%C3%A9e%20d%27Art%20et%20d%27Industrie",
+        "https://www.bing.com/images/search?q=Mus%C3%A9e%20d%27Art%20et%20d%27Industrie",
+        "https://commons.wikimedia.org/w/index.php?search=Mus%C3%A9e%20d%27Art%20et%20d%27Industrie&title=Special:MediaSearch&type=image",
+        "https://mai.saint-etienne.fr/"
+      ],
+      "verification_status": "verified",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "ste05",
+      "name": "La Commune Mazerat",
+      "category": "food_hall_music",
+      "city_or_area": "",
+      "gps": {
+        "lat": 45.433,
+        "lon": 4.389,
+        "precision": "site"
+      },
+      "approx_drive_from_planfoy_min": 20,
+      "audience": "avec ou sans enfant, mieux en début de soirée",
+      "why_go": "Le lieu branché le plus évident en 2026: food court, bar central, DJ sets, concerts et programmation culturelle.",
+      "opening_hours": "Lun fermé; mar-mer 11:30-14:00 et 18:00-00:00; jeu 11:30-14:00 et 18:00-01:00; ven-sam 10:30-01:00; dim 12:00-17:00.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://lacommune.co/saint-etienne/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=La%20Commune%20Mazerat",
+        "https://www.bing.com/images/search?q=La%20Commune%20Mazerat",
+        "https://commons.wikimedia.org/w/index.php?search=La%20Commune%20Mazerat&title=Special:MediaSearch&type=image",
+        "https://lacommune.co/saint-etienne/"
+      ],
+      "verification_status": "verified",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "ste06",
+      "name": "Le Fil",
+      "category": "live_music",
+      "city_or_area": "",
+      "gps": {
+        "lat": 45.4511,
+        "lon": 4.4,
+        "precision": "site"
+      },
+      "approx_drive_from_planfoy_min": 22,
+      "audience": "sans jeunes enfants sauf événement familial",
+      "why_go": "La meilleure salle de musiques actuelles de la ville, excellente acoustique, bar-club et terrasse.",
+      "opening_hours": "Selon programmation; billetterie et bar ouverts les soirs d'événement.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://www.le-fil.com/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Le%20Fil",
+        "https://www.bing.com/images/search?q=Le%20Fil",
+        "https://commons.wikimedia.org/w/index.php?search=Le%20Fil&title=Special:MediaSearch&type=image",
+        "https://www.le-fil.com/"
+      ],
+      "verification_status": "verified",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "ste07",
+      "name": "Le Solar",
+      "category": "jazz_club",
+      "city_or_area": "",
+      "gps": {
+        "lat": 45.44,
+        "lon": 4.3898,
+        "precision": "approximate"
+      },
+      "approx_drive_from_planfoy_min": 20,
+      "audience": "adultes",
+      "why_go": "Petit club dédié au jazz et aux musiques improvisées, plus intime que Le Fil.",
+      "opening_hours": "Selon programmation; jams traditionnellement le lundi hors fermeture estivale.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://www.saint-etienne-hors-cadre.fr/equipement/le-solar-saint-etienne/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Le%20Solar",
+        "https://www.bing.com/images/search?q=Le%20Solar",
+        "https://commons.wikimedia.org/w/index.php?search=Le%20Solar&title=Special:MediaSearch&type=image",
+        "https://www.saint-etienne-hors-cadre.fr/equipement/le-solar-saint-etienne/"
+      ],
+      "verification_status": "best_available",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "ste08",
+      "name": "La Comédie de Saint-Étienne",
+      "category": "theatre_architecture",
+      "city_or_area": "",
+      "gps": {
+        "lat": 45.4505,
+        "lon": 4.4008,
+        "precision": "site"
+      },
+      "approx_drive_from_planfoy_min": 22,
+      "audience": "sans enfant sauf spectacle jeune public",
+      "why_go": "Très beau bâtiment contemporain, programmation de référence et restaurant NŌUR les jours de représentation.",
+      "opening_hours": "Fermeture ou programmation réduite possible en août; vérifier.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://www.lacomedie.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=La%20Com%C3%A9die%20de%20Saint-%C3%89tienne",
+        "https://www.bing.com/images/search?q=La%20Com%C3%A9die%20de%20Saint-%C3%89tienne",
+        "https://commons.wikimedia.org/w/index.php?search=La%20Com%C3%A9die%20de%20Saint-%C3%89tienne&title=Special:MediaSearch&type=image",
+        "https://www.lacomedie.fr/"
+      ],
+      "verification_status": "verified",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "ste09",
+      "name": "Opéra de Saint-Étienne",
+      "category": "opera",
+      "city_or_area": "",
+      "gps": {
+        "lat": 45.4214,
+        "lon": 4.4019,
+        "precision": "site"
+      },
+      "approx_drive_from_planfoy_min": 20,
+      "audience": "sans enfant sauf spectacle famille",
+      "why_go": "Architecture, musique classique, danse et spectacles familiaux; agréable à combiner avec le Jardin des Plantes.",
+      "opening_hours": "Selon programmation; saison souvent calme début août.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://opera.saint-etienne.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Op%C3%A9ra%20de%20Saint-%C3%89tienne",
+        "https://www.bing.com/images/search?q=Op%C3%A9ra%20de%20Saint-%C3%89tienne",
+        "https://commons.wikimedia.org/w/index.php?search=Op%C3%A9ra%20de%20Saint-%C3%89tienne&title=Special:MediaSearch&type=image",
+        "https://opera.saint-etienne.fr/"
+      ],
+      "verification_status": "verified",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "ste10",
+      "name": "Cinéma Le Méliès Jean-Jaurès",
+      "category": "arthouse_cinema",
+      "city_or_area": "",
+      "gps": {
+        "lat": 45.4409,
+        "lon": 4.3874,
+        "precision": "site"
+      },
+      "approx_drive_from_planfoy_min": 20,
+      "audience": "avec ou sans enfant selon séance",
+      "why_go": "Cinéma art et essai central, idéal en cas de pluie, directement sur la plus agréable place du centre.",
+      "opening_hours": "Séances quotidiennes; consulter le programme.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://www.lemelies.com/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Cin%C3%A9ma%20Le%20M%C3%A9li%C3%A8s%20Jean-Jaur%C3%A8s",
+        "https://www.bing.com/images/search?q=Cin%C3%A9ma%20Le%20M%C3%A9li%C3%A8s%20Jean-Jaur%C3%A8s",
+        "https://commons.wikimedia.org/w/index.php?search=Cin%C3%A9ma%20Le%20M%C3%A9li%C3%A8s%20Jean-Jaur%C3%A8s&title=Special:MediaSearch&type=image",
+        "https://www.lemelies.com/"
+      ],
+      "verification_status": "verified",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "ste11",
+      "name": "La Serre",
+      "category": "contemporary_art",
+      "city_or_area": "",
+      "gps": {
+        "lat": 45.4391,
+        "lon": 4.386,
+        "precision": "approximate"
+      },
+      "approx_drive_from_planfoy_min": 20,
+      "audience": "adultes et enfants calmes",
+      "why_go": "Centre d'art contemporain discret, intéressant pour une visite courte entre deux étapes en centre-ville.",
+      "opening_hours": "Horaires dépendant des expositions; vérifier la fermeture estivale.",
+      "dated_events_2026": [
+        {
+          "start": "2026-06-18",
+          "end": "2026-07-31",
+          "title": "A house of dust and lilies, se termine avant votre semaine"
+        }
+      ],
+      "official_or_reference_url": "https://www.saint-etienne.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=La%20Serre",
+        "https://www.bing.com/images/search?q=La%20Serre",
+        "https://commons.wikimedia.org/w/index.php?search=La%20Serre&title=Special:MediaSearch&type=image",
+        "https://www.saint-etienne.fr/"
+      ],
+      "verification_status": "best_available",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "ste12",
+      "name": "Explora",
+      "category": "science_family",
+      "city_or_area": "",
+      "gps": {
+        "lat": 45.4418,
+        "lon": 4.4074,
+        "precision": "site"
+      },
+      "approx_drive_from_planfoy_min": 20,
+      "audience": "enfants, plutôt dès 6 ans",
+      "why_go": "Centre scientifique expérimental avec ateliers. Plusieurs activités sont trop âgées pour 4 ans, mais le lieu mérite surveillance du programme.",
+      "opening_hours": "Selon ateliers et réservations.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://explora.saint-etienne.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Explora",
+        "https://www.bing.com/images/search?q=Explora",
+        "https://commons.wikimedia.org/w/index.php?search=Explora&title=Special:MediaSearch&type=image",
+        "https://explora.saint-etienne.fr/"
+      ],
+      "verification_status": "verified",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "ste13",
+      "name": "Planétarium de Saint-Étienne",
+      "category": "planetarium",
+      "city_or_area": "",
+      "gps": {
+        "lat": 45.4207,
+        "lon": 4.41,
+        "precision": "site"
+      },
+      "approx_drive_from_planfoy_min": 20,
+      "audience": "famille, séances selon âge",
+      "why_go": "Très bon refuge canicule ou pluie; projections immersives. Certaines séances commencent à 4-5 ans, la Nuit des étoiles 2026 est dès 7 ans.",
+      "opening_hours": "Selon séances et réservation.",
+      "dated_events_2026": [
+        {
+          "date": "2026-08-08",
+          "time": "11:00, 14:30 ou 16:15",
+          "title": "Nuit des étoiles, projection dès 7 ans"
+        }
+      ],
+      "official_or_reference_url": "https://planetarium.saint-etienne.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Plan%C3%A9tarium%20de%20Saint-%C3%89tienne",
+        "https://www.bing.com/images/search?q=Plan%C3%A9tarium%20de%20Saint-%C3%89tienne",
+        "https://commons.wikimedia.org/w/index.php?search=Plan%C3%A9tarium%20de%20Saint-%C3%89tienne&title=Special:MediaSearch&type=image",
+        "https://planetarium.saint-etienne.fr/"
+      ],
+      "verification_status": "verified",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "ste14",
+      "name": "Place Jean-Jaurès et son kiosque",
+      "category": "urban_walk_family",
+      "city_or_area": "",
+      "gps": {
+        "lat": 45.4411,
+        "lon": 4.38737,
+        "precision": "site"
+      },
+      "approx_drive_from_planfoy_min": 20,
+      "audience": "avec enfants",
+      "why_go": "La meilleure base de centre-ville avec cafés, bassin, manège, jeux, tram et Méliès.",
+      "opening_hours": "Accès libre 24/7; commerces selon horaires.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://www.saint-etienne-hors-cadre.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Place%20Jean-Jaur%C3%A8s%20et%20son%20kiosque",
+        "https://www.bing.com/images/search?q=Place%20Jean-Jaur%C3%A8s%20et%20son%20kiosque",
+        "https://commons.wikimedia.org/w/index.php?search=Place%20Jean-Jaur%C3%A8s%20et%20son%20kiosque&title=Special:MediaSearch&type=image",
+        "https://www.saint-etienne-hors-cadre.fr/"
+      ],
+      "verification_status": "verified",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "ste15",
+      "name": "Crêt-de-Roc et escaliers du 'Montmartre stéphanois'",
+      "category": "urban_view_walk",
+      "city_or_area": "",
+      "gps": {
+        "lat": 45.4444,
+        "lon": 4.397,
+        "precision": "approximate"
+      },
+      "approx_drive_from_planfoy_min": 20,
+      "audience": "sans poussette; enfants marcheurs",
+      "why_go": "Le quartier le plus photogénique et singulier: escaliers, vues urbaines, petites adresses et ambiance populaire-créative.",
+      "opening_hours": "Accès libre.",
+      "dated_events_2026": [
+        {
+          "date": "2026-08-08",
+          "time": "10:00-11:00",
+          "title": "Visite guidée Du Crêt-de-Roc à Jean-Jaurès, adultes"
+        }
+      ],
+      "official_or_reference_url": "https://www.saint-etienne.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Cr%C3%AAt-de-Roc%20et%20escaliers%20du%20%27Montmartre%20st%C3%A9phanois%27",
+        "https://www.bing.com/images/search?q=Cr%C3%AAt-de-Roc%20et%20escaliers%20du%20%27Montmartre%20st%C3%A9phanois%27",
+        "https://commons.wikimedia.org/w/index.php?search=Cr%C3%AAt-de-Roc%20et%20escaliers%20du%20%27Montmartre%20st%C3%A9phanois%27&title=Special:MediaSearch&type=image",
+        "https://www.saint-etienne.fr/"
+      ],
+      "verification_status": "verified",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "ste16",
+      "name": "Demeure Chamoncel - Maison du patrimoine",
+      "category": "heritage",
+      "city_or_area": "",
+      "gps": {
+        "lat": 45.4375,
+        "lon": 4.3892,
+        "precision": "site"
+      },
+      "approx_drive_from_planfoy_min": 20,
+      "audience": "adultes",
+      "why_go": "Hôtel particulier Renaissance au cœur du vieux Sainté, parfait pour comprendre la ville au-delà de son image industrielle.",
+      "opening_hours": "Visites guidées sur réservation.",
+      "dated_events_2026": [
+        {
+          "date": "2026-08-02",
+          "time": "15:00-16:30",
+          "title": "La Demeure Chamoncel se raconte"
+        }
+      ],
+      "official_or_reference_url": "https://www.saint-etienne.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Demeure%20Chamoncel%20-%20Maison%20du%20patrimoine",
+        "https://www.bing.com/images/search?q=Demeure%20Chamoncel%20-%20Maison%20du%20patrimoine",
+        "https://commons.wikimedia.org/w/index.php?search=Demeure%20Chamoncel%20-%20Maison%20du%20patrimoine&title=Special:MediaSearch&type=image",
+        "https://www.saint-etienne.fr/"
+      ],
+      "verification_status": "verified",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "ste17",
+      "name": "Musée des Verts et stade Geoffroy-Guichard",
+      "category": "football_museum",
+      "city_or_area": "",
+      "gps": {
+        "lat": 45.4609,
+        "lon": 4.3903,
+        "precision": "site"
+      },
+      "approx_drive_from_planfoy_min": 22,
+      "audience": "famille",
+      "why_go": "Même sans être fan, le stade et l'histoire populaire de l'ASSE racontent une part essentielle de Saint-Étienne.",
+      "opening_hours": "Horaires variables; réservation recommandée.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://www.museedesverts.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Mus%C3%A9e%20des%20Verts%20et%20stade%20Geoffroy-Guichard",
+        "https://www.bing.com/images/search?q=Mus%C3%A9e%20des%20Verts%20et%20stade%20Geoffroy-Guichard",
+        "https://commons.wikimedia.org/w/index.php?search=Mus%C3%A9e%20des%20Verts%20et%20stade%20Geoffroy-Guichard&title=Special:MediaSearch&type=image",
+        "https://www.museedesverts.fr/"
+      ],
+      "verification_status": "verified",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "ste18",
+      "name": "Rue des Martyrs de Vingré et quartier Saint-Jacques",
+      "category": "bars_nightlife",
+      "city_or_area": "",
+      "gps": {
+        "lat": 45.4363,
+        "lon": 4.387,
+        "precision": "approximate"
+      },
+      "approx_drive_from_planfoy_min": 20,
+      "audience": "adultes; enfants au déjeuner",
+      "why_go": "Concentration de bars, terrasses et restaurants. Le secteur le plus simple pour improviser une soirée.",
+      "opening_hours": "Variable selon établissements; animé surtout jeu-sam soir.",
+      "dated_events_2026": [
+        {
+          "start": "2026-06-06",
+          "end": "2026-08-22",
+          "title": "Visites guidées du quartier Saint-Jacques à certaines dates"
+        }
+      ],
+      "official_or_reference_url": "https://www.saint-etienne.fr/agenda",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Rue%20des%20Martyrs%20de%20Vingr%C3%A9%20et%20quartier%20Saint-Jacques",
+        "https://www.bing.com/images/search?q=Rue%20des%20Martyrs%20de%20Vingr%C3%A9%20et%20quartier%20Saint-Jacques",
+        "https://commons.wikimedia.org/w/index.php?search=Rue%20des%20Martyrs%20de%20Vingr%C3%A9%20et%20quartier%20Saint-Jacques&title=Special:MediaSearch&type=image",
+        "https://www.saint-etienne.fr/agenda"
+      ],
+      "verification_status": "best_available",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "ste19",
+      "name": "Parc François-Mitterrand et Sainté Plage",
+      "category": "park_family",
+      "city_or_area": "",
+      "gps": {
+        "lat": 45.4474,
+        "lon": 4.408,
+        "precision": "site"
+      },
+      "approx_drive_from_planfoy_min": 22,
+      "audience": "enfants",
+      "why_go": "Grand espace urbain proche du Zénith, avec animations estivales et respiration facile pour les petits.",
+      "opening_hours": "Parc en accès libre; Sainté Plage selon programme d'été.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://www.saint-etienne.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Parc%20Fran%C3%A7ois-Mitterrand%20et%20Saint%C3%A9%20Plage",
+        "https://www.bing.com/images/search?q=Parc%20Fran%C3%A7ois-Mitterrand%20et%20Saint%C3%A9%20Plage",
+        "https://commons.wikimedia.org/w/index.php?search=Parc%20Fran%C3%A7ois-Mitterrand%20et%20Saint%C3%A9%20Plage&title=Special:MediaSearch&type=image",
+        "https://www.saint-etienne.fr/"
+      ],
+      "verification_status": "verified",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "ste20",
+      "name": "Saint-Victor-sur-Loire, plage et village",
+      "category": "lake_beach_village",
+      "city_or_area": "",
+      "gps": {
+        "lat": 45.4467,
+        "lon": 4.2606,
+        "precision": "site"
+      },
+      "approx_drive_from_planfoy_min": 35,
+      "audience": "excellent avec enfants",
+      "why_go": "La vraie échappée baignade de Saint-Étienne: plage surveillée selon saison, base nautique, vieux village et vues sur les gorges de la Loire.",
+      "opening_hours": "Site libre; baignade et services selon saison et météo.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://www.saint-etienne-hors-cadre.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Saint-Victor-sur-Loire%2C%20plage%20et%20village",
+        "https://www.bing.com/images/search?q=Saint-Victor-sur-Loire%2C%20plage%20et%20village",
+        "https://commons.wikimedia.org/w/index.php?search=Saint-Victor-sur-Loire%2C%20plage%20et%20village&title=Special:MediaSearch&type=image",
+        "https://www.saint-etienne-hors-cadre.fr/"
+      ],
+      "verification_status": "verified",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "pil01",
+      "name": "Barrage du Gouffre d'Enfer",
+      "category": "nature_hike",
+      "city_or_area": "Rochetaillée / Planfoy",
+      "gps": {
+        "lat": 45.3896,
+        "lon": 4.423,
+        "precision": "site_or_approximate"
+      },
+      "approx_drive_from_planfoy_min": 12,
+      "audience": "famille avec vigilance",
+      "why_go": "Barrage monumental, gorge et départ de balades. Impressionnant mais baignade interdite.",
+      "opening_hours": "Accès extérieur libre.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://www.saint-etienne-hors-cadre.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Barrage%20du%20Gouffre%20d%27Enfer%20Rochetaill%C3%A9e%20/%20Planfoy",
+        "https://www.bing.com/images/search?q=Barrage%20du%20Gouffre%20d%27Enfer%20Rochetaill%C3%A9e%20/%20Planfoy",
+        "https://commons.wikimedia.org/w/index.php?search=Barrage%20du%20Gouffre%20d%27Enfer%20Rochetaill%C3%A9e%20/%20Planfoy&title=Special:MediaSearch&type=image",
+        "https://www.saint-etienne-hors-cadre.fr/"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": [
+        "Baignade interdite dans la retenue",
+        "Falaises et escaliers: tenir les enfants"
+      ]
+    },
+    {
+      "id": "pil02",
+      "name": "Barrage du Pas-du-Riot",
+      "category": "lake_walk",
+      "city_or_area": "Planfoy",
+      "gps": {
+        "lat": 45.3758,
+        "lon": 4.4388,
+        "precision": "site_or_approximate"
+      },
+      "approx_drive_from_planfoy_min": 15,
+      "audience": "famille",
+      "why_go": "Retenue forestière calme, jolie promenade courte. Plus atmosphérique que spectaculaire.",
+      "opening_hours": "Accès extérieur libre.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://www.saint-etienne-hors-cadre.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Barrage%20du%20Pas-du-Riot%20Planfoy",
+        "https://www.bing.com/images/search?q=Barrage%20du%20Pas-du-Riot%20Planfoy",
+        "https://commons.wikimedia.org/w/index.php?search=Barrage%20du%20Pas-du-Riot%20Planfoy&title=Special:MediaSearch&type=image",
+        "https://www.saint-etienne-hors-cadre.fr/"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": [
+        "Baignade interdite"
+      ]
+    },
+    {
+      "id": "pil03",
+      "name": "Croix du Guizay",
+      "category": "viewpoint",
+      "city_or_area": "Planfoy",
+      "gps": {
+        "lat": 45.3941,
+        "lon": 4.3984,
+        "precision": "site_or_approximate"
+      },
+      "approx_drive_from_planfoy_min": 10,
+      "audience": "famille",
+      "why_go": "Belvédère très facile pour apéro ou coucher de soleil, avec vaste vue sur Saint-Étienne.",
+      "opening_hours": "Accès libre.",
+      "dated_events_2026": [],
+      "official_or_reference_url": null,
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Croix%20du%20Guizay%20Planfoy",
+        "https://www.bing.com/images/search?q=Croix%20du%20Guizay%20Planfoy",
+        "https://commons.wikimedia.org/w/index.php?search=Croix%20du%20Guizay%20Planfoy&title=Special:MediaSearch&type=image"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "pil04",
+      "name": "Les Trois Dents",
+      "category": "ridge_hike",
+      "city_or_area": "Pilat",
+      "gps": {
+        "lat": 45.356,
+        "lon": 4.627,
+        "precision": "site_or_approximate"
+      },
+      "approx_drive_from_planfoy_min": 35,
+      "audience": "adultes et enfants bons marcheurs",
+      "why_go": "Le relief le plus spectaculaire du Pilat, idéal tôt le matin ou au coucher du soleil.",
+      "opening_hours": "Accès libre.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://www.pilat-tourisme.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Les%20Trois%20Dents%20Pilat",
+        "https://www.bing.com/images/search?q=Les%20Trois%20Dents%20Pilat",
+        "https://commons.wikimedia.org/w/index.php?search=Les%20Trois%20Dents%20Pilat&title=Special:MediaSearch&type=image",
+        "https://www.pilat-tourisme.fr/"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": [
+        "Terrain rocheux",
+        "Inadapté aux enfants de 4 ans sur l'ensemble de la boucle"
+      ]
+    },
+    {
+      "id": "pil05",
+      "name": "Crêt de la Perdrix",
+      "category": "summit",
+      "city_or_area": "Le Bessat / Colombier",
+      "gps": {
+        "lat": 45.3636,
+        "lon": 4.6129,
+        "precision": "site_or_approximate"
+      },
+      "approx_drive_from_planfoy_min": 35,
+      "audience": "famille marcheuse",
+      "why_go": "Point culminant du Pilat et panorama vers Alpes et vallée du Rhône lorsque l'air est clair.",
+      "opening_hours": "Accès libre.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://www.pilat-tourisme.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Cr%C3%AAt%20de%20la%20Perdrix%20Le%20Bessat%20/%20Colombier",
+        "https://www.bing.com/images/search?q=Cr%C3%AAt%20de%20la%20Perdrix%20Le%20Bessat%20/%20Colombier",
+        "https://commons.wikimedia.org/w/index.php?search=Cr%C3%AAt%20de%20la%20Perdrix%20Le%20Bessat%20/%20Colombier&title=Special:MediaSearch&type=image",
+        "https://www.pilat-tourisme.fr/"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "pil06",
+      "name": "Crêt de l'Œillon",
+      "category": "viewpoint",
+      "city_or_area": "Pélussin",
+      "gps": {
+        "lat": 45.386,
+        "lon": 4.6161,
+        "precision": "site_or_approximate"
+      },
+      "approx_drive_from_planfoy_min": 35,
+      "audience": "famille",
+      "why_go": "Panorama très accessible, plus simple que les Trois Dents avec des petits.",
+      "opening_hours": "Accès libre.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://www.pilat-tourisme.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Cr%C3%AAt%20de%20l%27%C5%92illon%20P%C3%A9lussin",
+        "https://www.bing.com/images/search?q=Cr%C3%AAt%20de%20l%27%C5%92illon%20P%C3%A9lussin",
+        "https://commons.wikimedia.org/w/index.php?search=Cr%C3%AAt%20de%20l%27%C5%92illon%20P%C3%A9lussin&title=Special:MediaSearch&type=image",
+        "https://www.pilat-tourisme.fr/"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "pil07",
+      "name": "Saut du Gier",
+      "category": "waterfall_hike",
+      "city_or_area": "La Valla-en-Gier",
+      "gps": {
+        "lat": 45.36,
+        "lon": 4.5125,
+        "precision": "site_or_approximate"
+      },
+      "approx_drive_from_planfoy_min": 30,
+      "audience": "famille marcheuse",
+      "why_go": "Cascade forestière et fraîcheur; débit variable en août.",
+      "opening_hours": "Accès libre.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://www.pilat-tourisme.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Saut%20du%20Gier%20La%20Valla-en-Gier",
+        "https://www.bing.com/images/search?q=Saut%20du%20Gier%20La%20Valla-en-Gier",
+        "https://commons.wikimedia.org/w/index.php?search=Saut%20du%20Gier%20La%20Valla-en-Gier&title=Special:MediaSearch&type=image",
+        "https://www.pilat-tourisme.fr/"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": [
+        "Rochers glissants",
+        "Débit parfois faible en été"
+      ]
+    },
+    {
+      "id": "pil08",
+      "name": "Tourbière des Vernels",
+      "category": "wetland_walk",
+      "city_or_area": "Le Bessat",
+      "gps": {
+        "lat": 45.363,
+        "lon": 4.454,
+        "precision": "site_or_approximate"
+      },
+      "approx_drive_from_planfoy_min": 25,
+      "audience": "famille",
+      "why_go": "Ambiance de tourbière et forêt humide, intéressante au petit matin, mais fragile et peu spectaculaire visuellement.",
+      "opening_hours": "Accès encadré par sentiers.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://www.pilat-tourisme.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Tourbi%C3%A8re%20des%20Vernels%20Le%20Bessat",
+        "https://www.bing.com/images/search?q=Tourbi%C3%A8re%20des%20Vernels%20Le%20Bessat",
+        "https://commons.wikimedia.org/w/index.php?search=Tourbi%C3%A8re%20des%20Vernels%20Le%20Bessat&title=Special:MediaSearch&type=image",
+        "https://www.pilat-tourisme.fr/"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": [
+        "Rester sur les cheminements"
+      ]
+    },
+    {
+      "id": "pil09",
+      "name": "Le Planil de Doizieux",
+      "category": "meadow_view",
+      "city_or_area": "Doizieux",
+      "gps": {
+        "lat": 45.417,
+        "lon": 4.58,
+        "precision": "approximate"
+      },
+      "approx_drive_from_planfoy_min": 30,
+      "audience": "famille",
+      "why_go": "Prairies et vues ouvertes, bon spot pique-nique/coucher de soleil.",
+      "opening_hours": "Accès libre selon chemins.",
+      "dated_events_2026": [],
+      "official_or_reference_url": null,
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Le%20Planil%20de%20Doizieux%20Doizieux",
+        "https://www.bing.com/images/search?q=Le%20Planil%20de%20Doizieux%20Doizieux",
+        "https://commons.wikimedia.org/w/index.php?search=Le%20Planil%20de%20Doizieux%20Doizieux&title=Special:MediaSearch&type=image"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "pil10",
+      "name": "Géant du Taillard",
+      "category": "forest_walk",
+      "city_or_area": "Saint-Sauveur-en-Rue",
+      "gps": {
+        "lat": 45.305,
+        "lon": 4.478,
+        "precision": "approximate"
+      },
+      "approx_drive_from_planfoy_min": 35,
+      "audience": "famille marcheuse",
+      "why_go": "Grand sapin remarquable au cœur d'une forêt dense, balade ombragée.",
+      "opening_hours": "Accès libre.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://www.pilat-tourisme.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=G%C3%A9ant%20du%20Taillard%20Saint-Sauveur-en-Rue",
+        "https://www.bing.com/images/search?q=G%C3%A9ant%20du%20Taillard%20Saint-Sauveur-en-Rue",
+        "https://commons.wikimedia.org/w/index.php?search=G%C3%A9ant%20du%20Taillard%20Saint-Sauveur-en-Rue&title=Special:MediaSearch&type=image",
+        "https://www.pilat-tourisme.fr/"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "pil11",
+      "name": "Rivière du Furan, secteur amont de Planfoy",
+      "category": "river_access",
+      "city_or_area": "Planfoy",
+      "gps": {
+        "lat": 45.3815,
+        "lon": 4.438,
+        "precision": "approximate"
+      },
+      "approx_drive_from_planfoy_min": 12,
+      "audience": "famille sous surveillance",
+      "why_go": "Petits seuils, galets et eau fraîche pour jouer sans promettre une vraie baignade.",
+      "opening_hours": "Accès libre selon sentiers.",
+      "dated_events_2026": [],
+      "official_or_reference_url": null,
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Rivi%C3%A8re%20du%20Furan%2C%20secteur%20amont%20de%20Planfoy%20Planfoy",
+        "https://www.bing.com/images/search?q=Rivi%C3%A8re%20du%20Furan%2C%20secteur%20amont%20de%20Planfoy%20Planfoy",
+        "https://commons.wikimedia.org/w/index.php?search=Rivi%C3%A8re%20du%20Furan%2C%20secteur%20amont%20de%20Planfoy%20Planfoy&title=Special:MediaSearch&type=image"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": [
+        "Pas un site officiel de baignade",
+        "Qualité et niveau d'eau variables",
+        "Éviter proximité immédiate des barrages"
+      ]
+    },
+    {
+      "id": "pil12",
+      "name": "Semène, secteur Saint-Genest-Malifaux",
+      "category": "river_access",
+      "city_or_area": "Saint-Genest-Malifaux",
+      "gps": {
+        "lat": 45.34,
+        "lon": 4.42,
+        "precision": "approximate"
+      },
+      "approx_drive_from_planfoy_min": 20,
+      "audience": "famille sous surveillance",
+      "why_go": "Rivière de plateau, coins peu profonds et ombragés pour épuisettes et barrages de cailloux.",
+      "opening_hours": "Accès selon chemins et propriétés.",
+      "dated_events_2026": [],
+      "official_or_reference_url": null,
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Sem%C3%A8ne%2C%20secteur%20Saint-Genest-Malifaux%20Saint-Genest-Malifaux",
+        "https://www.bing.com/images/search?q=Sem%C3%A8ne%2C%20secteur%20Saint-Genest-Malifaux%20Saint-Genest-Malifaux",
+        "https://commons.wikimedia.org/w/index.php?search=Sem%C3%A8ne%2C%20secteur%20Saint-Genest-Malifaux%20Saint-Genest-Malifaux&title=Special:MediaSearch&type=image"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": [
+        "Pas de baignade surveillée",
+        "Respecter propriétés privées"
+      ]
+    },
+    {
+      "id": "sw01",
+      "name": "Lac de Devesset",
+      "category": "swimming_lake",
+      "city_or_area": "Devesset",
+      "gps": {
+        "lat": 45.0663,
+        "lon": 4.3886,
+        "precision": "site_or_approximate"
+      },
+      "approx_drive_from_planfoy_min": 55,
+      "audience": "excellent avec enfants",
+      "why_go": "Meilleur compromis plage, baignade, paddle et journée facile en groupe.",
+      "opening_hours": "Base de loisirs ouverte en saison; horaires des activités à vérifier.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://www.devesset.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Lac%20de%20Devesset%20Devesset",
+        "https://www.bing.com/images/search?q=Lac%20de%20Devesset%20Devesset",
+        "https://commons.wikimedia.org/w/index.php?search=Lac%20de%20Devesset%20Devesset&title=Special:MediaSearch&type=image",
+        "https://www.devesset.fr/"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "sw02",
+      "name": "Lac de Lavalette - base nautique",
+      "category": "swimming_lake",
+      "city_or_area": "Lapte",
+      "gps": {
+        "lat": 45.0875,
+        "lon": 4.2095,
+        "precision": "site_or_approximate"
+      },
+      "approx_drive_from_planfoy_min": 55,
+      "audience": "excellent avec enfants",
+      "why_go": "Grand lac boisé, plage et activités nautiques; plus étendu et souvent moins compact que Devesset.",
+      "opening_hours": "Services saisonniers; vérifier baignade surveillée.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://www.hautpaysduvelay-tourisme.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Lac%20de%20Lavalette%20-%20base%20nautique%20Lapte",
+        "https://www.bing.com/images/search?q=Lac%20de%20Lavalette%20-%20base%20nautique%20Lapte",
+        "https://commons.wikimedia.org/w/index.php?search=Lac%20de%20Lavalette%20-%20base%20nautique%20Lapte&title=Special:MediaSearch&type=image",
+        "https://www.hautpaysduvelay-tourisme.fr/"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "sw03",
+      "name": "Plage du Chambon-sur-Lignon",
+      "category": "river_beach",
+      "city_or_area": "Le Chambon-sur-Lignon",
+      "gps": {
+        "lat": 45.0597,
+        "lon": 4.3045,
+        "precision": "site_or_approximate"
+      },
+      "approx_drive_from_planfoy_min": 60,
+      "audience": "excellent avec enfants",
+      "why_go": "Accès facile au Lignon, plage aménagée et logistique familiale.",
+      "opening_hours": "Ouverture et surveillance saisonnières.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://www.ot-hautlignon.com/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Plage%20du%20Chambon-sur-Lignon%20Le%20Chambon-sur-Lignon",
+        "https://www.bing.com/images/search?q=Plage%20du%20Chambon-sur-Lignon%20Le%20Chambon-sur-Lignon",
+        "https://commons.wikimedia.org/w/index.php?search=Plage%20du%20Chambon-sur-Lignon%20Le%20Chambon-sur-Lignon&title=Special:MediaSearch&type=image",
+        "https://www.ot-hautlignon.com/"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "sw04",
+      "name": "Pont de Mars sur le Lignon",
+      "category": "river_access",
+      "city_or_area": "Mars / Le Chambon",
+      "gps": {
+        "lat": 45.038,
+        "lon": 4.355,
+        "precision": "approximate"
+      },
+      "approx_drive_from_planfoy_min": 65,
+      "audience": "famille sous surveillance",
+      "why_go": "Secteur plus sauvage du Lignon avec rochers et accès rivière.",
+      "opening_hours": "Accès libre selon zones.",
+      "dated_events_2026": [],
+      "official_or_reference_url": null,
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Pont%20de%20Mars%20sur%20le%20Lignon%20Mars%20/%20Le%20Chambon",
+        "https://www.bing.com/images/search?q=Pont%20de%20Mars%20sur%20le%20Lignon%20Mars%20/%20Le%20Chambon",
+        "https://commons.wikimedia.org/w/index.php?search=Pont%20de%20Mars%20sur%20le%20Lignon%20Mars%20/%20Le%20Chambon&title=Special:MediaSearch&type=image"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": [
+        "Non surveillé",
+        "Courant et profondeur variables"
+      ]
+    },
+    {
+      "id": "sw05",
+      "name": "Gorges du Lignon - passerelle des gorges",
+      "category": "river_hike",
+      "city_or_area": "Haute-Loire",
+      "gps": {
+        "lat": 45.116,
+        "lon": 4.248,
+        "precision": "approximate"
+      },
+      "approx_drive_from_planfoy_min": 60,
+      "audience": "famille marcheuse",
+      "why_go": "Gorge boisée et passerelle spectaculaire; pour la balade plus que pour une baignade officielle.",
+      "opening_hours": "Accès libre.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://www.hautpaysduvelay-tourisme.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Gorges%20du%20Lignon%20-%20passerelle%20des%20gorges%20Haute-Loire",
+        "https://www.bing.com/images/search?q=Gorges%20du%20Lignon%20-%20passerelle%20des%20gorges%20Haute-Loire",
+        "https://commons.wikimedia.org/w/index.php?search=Gorges%20du%20Lignon%20-%20passerelle%20des%20gorges%20Haute-Loire&title=Special:MediaSearch&type=image",
+        "https://www.hautpaysduvelay-tourisme.fr/"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "sw06",
+      "name": "Cascade de la Beaume",
+      "category": "waterfall",
+      "city_or_area": "Solignac-sur-Loire",
+      "gps": {
+        "lat": 44.9672,
+        "lon": 3.8725,
+        "precision": "site_or_approximate"
+      },
+      "approx_drive_from_planfoy_min": 85,
+      "audience": "famille marcheuse",
+      "why_go": "Belle chute sur orgues volcaniques; détour spectaculaire mais loin de Planfoy.",
+      "opening_hours": "Accès libre.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://www.lepuyenvelay-tourisme.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Cascade%20de%20la%20Beaume%20Solignac-sur-Loire",
+        "https://www.bing.com/images/search?q=Cascade%20de%20la%20Beaume%20Solignac-sur-Loire",
+        "https://commons.wikimedia.org/w/index.php?search=Cascade%20de%20la%20Beaume%20Solignac-sur-Loire&title=Special:MediaSearch&type=image",
+        "https://www.lepuyenvelay-tourisme.fr/"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": [
+        "Baignade non surveillée et potentiellement interdite selon conditions",
+        "Rochers glissants"
+      ]
+    },
+    {
+      "id": "sw07",
+      "name": "Vallée de l'Ibie - Trou de la Lune",
+      "category": "wild_swimming",
+      "city_or_area": "Ardèche",
+      "gps": {
+        "lat": 44.5165,
+        "lon": 4.488,
+        "precision": "approximate"
+      },
+      "approx_drive_from_planfoy_min": 125,
+      "audience": "adultes; déconseillé avec 4 ans",
+      "why_go": "Eau calcaire turquoise lorsqu'il y a assez de débit, mais trop loin et aléatoire en août.",
+      "opening_hours": "Accès naturel.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://www.gorges-ardeche-pontdarc.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Vall%C3%A9e%20de%20l%27Ibie%20-%20Trou%20de%20la%20Lune%20Ard%C3%A8che",
+        "https://www.bing.com/images/search?q=Vall%C3%A9e%20de%20l%27Ibie%20-%20Trou%20de%20la%20Lune%20Ard%C3%A8che",
+        "https://commons.wikimedia.org/w/index.php?search=Vall%C3%A9e%20de%20l%27Ibie%20-%20Trou%20de%20la%20Lune%20Ard%C3%A8che&title=Special:MediaSearch&type=image",
+        "https://www.gorges-ardeche-pontdarc.fr/"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": [
+        "Rivière souvent très basse ou sèche en été",
+        "Accès et stationnement sensibles",
+        "Pas adapté à trois enfants de 4 ans"
+      ]
+    },
+    {
+      "id": "sw08",
+      "name": "Gorges de la Borne",
+      "category": "wild_swimming",
+      "city_or_area": "Ardèche",
+      "gps": {
+        "lat": 44.626,
+        "lon": 4.025,
+        "precision": "approximate"
+      },
+      "approx_drive_from_planfoy_min": 130,
+      "audience": "adultes expérimentés",
+      "why_go": "Vasques sauvages magnifiques, mais expédition depuis Planfoy.",
+      "opening_hours": "Accès naturel.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://www.montagnedardeche.com/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Gorges%20de%20la%20Borne%20Ard%C3%A8che",
+        "https://www.bing.com/images/search?q=Gorges%20de%20la%20Borne%20Ard%C3%A8che",
+        "https://commons.wikimedia.org/w/index.php?search=Gorges%20de%20la%20Borne%20Ard%C3%A8che&title=Special:MediaSearch&type=image",
+        "https://www.montagnedardeche.com/"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": [
+        "Très éloigné",
+        "Non surveillé",
+        "Accès rocheux"
+      ]
+    },
+    {
+      "id": "gui01",
+      "name": "Before de Couriot",
+      "category": "summer_guinguette",
+      "city_or_area": "",
+      "gps": {
+        "lat": 45.4343,
+        "lon": 4.3738,
+        "precision": "site"
+      },
+      "approx_drive_from_planfoy_min": 20,
+      "audience": "famille en début de soirée",
+      "why_go": "La meilleure guinguette estivale locale: cadre minier, musique, restauration et grand parc.",
+      "opening_hours": "Été 2026, généralement mer-dim; horaires selon événement.",
+      "dated_events_2026": [
+        {
+          "date": "2026-08-01",
+          "time": "soir",
+          "title": "Ciné Couriot #2 et/ou Boum #3 selon séquençage du programme"
+        },
+        {
+          "date": "2026-08-06",
+          "time": "20:00",
+          "title": "Diwan Roots, reggae"
+        },
+        {
+          "date": "2026-08-07",
+          "time": "18:00",
+          "title": "Train de nuit, open air électro"
+        },
+        {
+          "date": "2026-08-08",
+          "time": "20:00",
+          "title": "Ashed Winter"
+        }
+      ],
+      "official_or_reference_url": "https://www.saint-etienne.fr/sites/default/files/media/downloads/2026-ete_a_sainte-programmeweb.pdf",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Before%20de%20Couriot",
+        "https://www.bing.com/images/search?q=Before%20de%20Couriot",
+        "https://commons.wikimedia.org/w/index.php?search=Before%20de%20Couriot&title=Special:MediaSearch&type=image",
+        "https://www.saint-etienne.fr/sites/default/files/media/downloads/2026-ete_a_sainte-programmeweb.pdf"
+      ],
+      "verification_status": "verified",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "gui02",
+      "name": "Guinguette des Bords de Loire",
+      "category": "guinguette",
+      "city_or_area": "Saint-Just-Saint-Rambert",
+      "gps": {
+        "lat": 45.5005,
+        "lon": 4.2435,
+        "precision": "approximate"
+      },
+      "approx_drive_from_planfoy_min": 40,
+      "audience": "famille avec surveillance",
+      "why_go": "Terrasse et ambiance bord de Loire, pratique après une sortie vers Saint-Just-Saint-Rambert.",
+      "opening_hours": "Saisonnier; vérifier directement.",
+      "dated_events_2026": [],
+      "official_or_reference_url": null,
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Guinguette%20des%20Bords%20de%20Loire%20Saint-Just-Saint-Rambert",
+        "https://www.bing.com/images/search?q=Guinguette%20des%20Bords%20de%20Loire%20Saint-Just-Saint-Rambert",
+        "https://commons.wikimedia.org/w/index.php?search=Guinguette%20des%20Bords%20de%20Loire%20Saint-Just-Saint-Rambert&title=Special:MediaSearch&type=image"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": [
+        "Proximité de l'eau avec jeunes enfants"
+      ]
+    },
+    {
+      "id": "gui03",
+      "name": "Guinguette du Cottet",
+      "category": "guinguette",
+      "city_or_area": "Saint-Appolinard",
+      "gps": {
+        "lat": 45.3195,
+        "lon": 4.65,
+        "precision": "approximate"
+      },
+      "approx_drive_from_planfoy_min": 45,
+      "audience": "famille",
+      "why_go": "Adresse rurale et détendue, espace extérieur et concerts ponctuels.",
+      "opening_hours": "Saisonnier; programmation à confirmer pour août 2026.",
+      "dated_events_2026": [],
+      "official_or_reference_url": null,
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Guinguette%20du%20Cottet%20Saint-Appolinard",
+        "https://www.bing.com/images/search?q=Guinguette%20du%20Cottet%20Saint-Appolinard",
+        "https://commons.wikimedia.org/w/index.php?search=Guinguette%20du%20Cottet%20Saint-Appolinard&title=Special:MediaSearch&type=image"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": [
+        "La programmation citée précédemment n'a pas été revalidée"
+      ]
+    },
+    {
+      "id": "gui04",
+      "name": "La Vieille Mule",
+      "category": "alternative_live_bar",
+      "city_or_area": "Saint-Étienne",
+      "gps": {
+        "lat": 45.421,
+        "lon": 4.391,
+        "precision": "approximate"
+      },
+      "approx_drive_from_planfoy_min": 18,
+      "audience": "adultes",
+      "why_go": "Ambiance alternative et concerts; à vérifier car les horaires publics trouvés auparavant étaient incohérents.",
+      "opening_hours": "Vérifier réseaux sociaux avant déplacement.",
+      "dated_events_2026": [],
+      "official_or_reference_url": null,
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=La%20Vieille%20Mule%20Saint-%C3%89tienne",
+        "https://www.bing.com/images/search?q=La%20Vieille%20Mule%20Saint-%C3%89tienne",
+        "https://commons.wikimedia.org/w/index.php?search=La%20Vieille%20Mule%20Saint-%C3%89tienne&title=Special:MediaSearch&type=image"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": [
+        "Ouverture non confirmée"
+      ]
+    },
+    {
+      "id": "kid01",
+      "name": "Le Carré des Animaux",
+      "category": "children_farm",
+      "city_or_area": "Sainte-Croix-en-Jarez",
+      "gps": {
+        "lat": 45.47,
+        "lon": 4.65,
+        "precision": "approximate"
+      },
+      "approx_drive_from_planfoy_min": 45,
+      "audience": "excellent avec enfants",
+      "why_go": "Ferme pédagogique et animaux, sortie simple pour trois enfants de 4 ans.",
+      "opening_hours": "Réservation et horaires saisonniers à vérifier.",
+      "dated_events_2026": [],
+      "official_or_reference_url": null,
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Le%20Carr%C3%A9%20des%20Animaux%20Sainte-Croix-en-Jarez",
+        "https://www.bing.com/images/search?q=Le%20Carr%C3%A9%20des%20Animaux%20Sainte-Croix-en-Jarez",
+        "https://commons.wikimedia.org/w/index.php?search=Le%20Carr%C3%A9%20des%20Animaux%20Sainte-Croix-en-Jarez&title=Special:MediaSearch&type=image"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "kid02",
+      "name": "Espace zoologique de Saint-Martin-la-Plaine",
+      "category": "zoo",
+      "city_or_area": "Saint-Martin-la-Plaine",
+      "gps": {
+        "lat": 45.5444,
+        "lon": 4.5932,
+        "precision": "site_or_approximate"
+      },
+      "approx_drive_from_planfoy_min": 45,
+      "audience": "excellent avec enfants",
+      "why_go": "Très fort sur les primates; journée complète, ombrage partiel.",
+      "opening_hours": "Ouvert quotidiennement en saison; vérifier horaires exacts.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://www.espace-zoologique.com/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Espace%20zoologique%20de%20Saint-Martin-la-Plaine%20Saint-Martin-la-Plaine",
+        "https://www.bing.com/images/search?q=Espace%20zoologique%20de%20Saint-Martin-la-Plaine%20Saint-Martin-la-Plaine",
+        "https://commons.wikimedia.org/w/index.php?search=Espace%20zoologique%20de%20Saint-Martin-la-Plaine%20Saint-Martin-la-Plaine&title=Special:MediaSearch&type=image",
+        "https://www.espace-zoologique.com/"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "kid03",
+      "name": "Acrobois Pilat",
+      "category": "adventure_park",
+      "city_or_area": "La Versanne",
+      "gps": {
+        "lat": 45.288,
+        "lon": 4.483,
+        "precision": "approximate"
+      },
+      "approx_drive_from_planfoy_min": 35,
+      "audience": "enfants selon taille et parcours",
+      "why_go": "Accrobranche et activités forêt; vérifier que les parcours 4 ans correspondent à leur taille.",
+      "opening_hours": "Ouvert en saison, réservation conseillée.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://www.acrobois.fr/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Acrobois%20Pilat%20La%20Versanne",
+        "https://www.bing.com/images/search?q=Acrobois%20Pilat%20La%20Versanne",
+        "https://commons.wikimedia.org/w/index.php?search=Acrobois%20Pilat%20La%20Versanne&title=Special:MediaSearch&type=image",
+        "https://www.acrobois.fr/"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "kid04",
+      "name": "Family Aventure",
+      "category": "adventure_park",
+      "city_or_area": "La Séauve-sur-Semène",
+      "gps": {
+        "lat": 45.296,
+        "lon": 4.252,
+        "precision": "approximate"
+      },
+      "approx_drive_from_planfoy_min": 45,
+      "audience": "famille",
+      "why_go": "Parc multi-activités et plan d'eau; utile pour occuper plusieurs enfants d'âges proches.",
+      "opening_hours": "Ouvert en saison; vérifier conditions d'âge.",
+      "dated_events_2026": [],
+      "official_or_reference_url": null,
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Family%20Aventure%20La%20S%C3%A9auve-sur-Sem%C3%A8ne",
+        "https://www.bing.com/images/search?q=Family%20Aventure%20La%20S%C3%A9auve-sur-Sem%C3%A8ne",
+        "https://commons.wikimedia.org/w/index.php?search=Family%20Aventure%20La%20S%C3%A9auve-sur-Sem%C3%A8ne&title=Special:MediaSearch&type=image"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "kid05",
+      "name": "Safari de Peaugres",
+      "category": "safari_zoo",
+      "city_or_area": "Peaugres",
+      "gps": {
+        "lat": 45.286,
+        "lon": 4.729,
+        "precision": "site_or_approximate"
+      },
+      "approx_drive_from_planfoy_min": 55,
+      "audience": "excellent avec enfants",
+      "why_go": "La sortie enfant la plus mémorable: circuit voiture puis parc à pied.",
+      "opening_hours": "Ouvert quotidiennement en été; billets en ligne recommandés.",
+      "dated_events_2026": [],
+      "official_or_reference_url": "https://www.safari-peaugres.com/",
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Safari%20de%20Peaugres%20Peaugres",
+        "https://www.bing.com/images/search?q=Safari%20de%20Peaugres%20Peaugres",
+        "https://commons.wikimedia.org/w/index.php?search=Safari%20de%20Peaugres%20Peaugres&title=Special:MediaSearch&type=image",
+        "https://www.safari-peaugres.com/"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": []
+    },
+    {
+      "id": "kid06",
+      "name": "Centre équestre de Planfoy",
+      "category": "pony",
+      "city_or_area": "Planfoy",
+      "gps": {
+        "lat": 45.3785,
+        "lon": 4.4385,
+        "precision": "approximate"
+      },
+      "approx_drive_from_planfoy_min": 8,
+      "audience": "enfants",
+      "why_go": "Option locale pour une initiation poney, uniquement sur réservation et disponibilité.",
+      "opening_hours": "Sur réservation.",
+      "dated_events_2026": [],
+      "official_or_reference_url": null,
+      "image_links": [
+        "https://www.google.com/search?tbm=isch&q=Centre%20%C3%A9questre%20de%20Planfoy%20Planfoy",
+        "https://www.bing.com/images/search?q=Centre%20%C3%A9questre%20de%20Planfoy%20Planfoy",
+        "https://commons.wikimedia.org/w/index.php?search=Centre%20%C3%A9questre%20de%20Planfoy%20Planfoy&title=Special:MediaSearch&type=image"
+      ],
+      "verification_status": "verified_or_best_available",
+      "notes": null,
+      "warnings": []
+    }
+  ],
+  "sources": [
+    {
+      "name": "Programme Été à Sainté 2026",
+      "url": "https://www.saint-etienne.fr/sites/default/files/media/downloads/2026-ete_a_sainte-programmeweb.pdf"
+    },
+    {
+      "name": "Agenda Ville de Saint-Étienne",
+      "url": "https://www.saint-etienne.fr/agenda"
+    },
+    {
+      "name": "Saint-Étienne Hors Cadre",
+      "url": "https://www.saint-etienne-hors-cadre.fr/"
+    },
+    {
+      "name": "Cité du design",
+      "url": "https://www.citedudesign.com/"
+    },
+    {
+      "name": "La Commune Mazerat",
+      "url": "https://lacommune.co/saint-etienne/"
+    }
+  ]
+}
