@@ -26,6 +26,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run lint
+      - run: npm test
       - run: npm run build
       # Requires Pages to be enabled once, with "GitHub Actions" as the source
       # (Settings > Pages). The workflow token cannot create the site itself.

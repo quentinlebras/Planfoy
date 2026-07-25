@@ -39,6 +39,11 @@ which is what covers the unnamed natural sites — and caches results in `localS
 weeks. Photos remain the property of their authors; the lightbox shows author and license. Places
 with no freely licensed photo get a tinted cover plus external search links.
 
+The API contract matters more than it looks: `formatversion=2` is what makes `query.pages` an
+array, and requesting version 1 makes every lookup fail *silently* — empty covers everywhere with
+no error. `scripts/photos.test.mjs` pins the request parameters and the response shape down; run it
+with `npm test`.
+
 ## Data
 
 `src/data/recommandations.json` holds the source dataset (places, coordinates, opening hours, 2026
@@ -57,6 +62,7 @@ npm run dev      # dev server
 npm run build    # type-check + production build to dist/
 npm run preview  # serve the production build
 npm run lint     # oxlint
+npm test         # Commons request/response contract
 ```
 
 ### Smoke test

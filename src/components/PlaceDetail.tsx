@@ -217,10 +217,16 @@ export function PlaceDetail({ place, origin, onClose, onShowOnMap }: Props) {
                 ))}
               </div>
             )}
-            {(state === 'empty' || state === 'error') && (
+            {state === 'empty' && (
               <p className="muted">
                 Pas de photo libre de droits trouvée pour ce lieu. Les recherches d'images
                 ci-dessous ouvrent des résultats externes.
+              </p>
+            )}
+            {state === 'error' && (
+              <p className="notice notice--warn">
+                Wikimedia Commons est injoignable pour le moment. Réessaie plus tard, ou utilise
+                les recherches d'images ci-dessous.
               </p>
             )}
             <div className="links">

@@ -1,14 +1,17 @@
 import type { Photo, Place } from '../types';
 
 const API = 'https://commons.wikimedia.org/w/api.php';
-const CACHE_PREFIX = 'planfoy:photos:v2:';
+const CACHE_PREFIX = 'planfoy:photos:v3:';
 const CACHE_TTL_MS = 14 * 24 * 60 * 60 * 1000;
-const EXCLUDED = /\.(svg|pdf|tif|tiff|djvu|ogv|webm|xcf)$/i;
-/** Commons is full of maps, coats of arms and signage; they make poor covers. */
+const EXCLUDED_EXTENSION = /\.(svg|pdf|tif|tiff|djvu|ogv|webm|xcf)$/i;
+/**
+ * Commons is full of maps, coats of arms and signage; they make poor covers.
+ * Word boundaries matter here: an unanchored "sign" also matches "design".
+ */
 const EXCLUDED_TITLE =
-  /(carte|map of|blason|coat of arms|logo|plaque|panneau|sign|diagram|graph|flag|drapeau|localisation)/i;
+  /\b(carte|cartes|map|maps|blason|armoiries|coat of arms|logo|plaque|panneau|signage|diagram|graph|flag|drapeau|localisation|location map)\b/i;
 
-interface CommonsPage {
+export interface CommonsPage {
   title: string;
   imageinfo?: {
     url: string;
@@ -19,16 +22,37 @@ interface CommonsPage {
   }[];
 }
 
-function stripHtml(html: string): string {
-  const el = document.createElement('div');
-  el.innerHTML = html;
-  return (el.textContent ?? '').replace(/\s+/g, ' ').trim();
+export interface CommonsResponse {
+  query?: { pages?: CommonsPage[] };
 }
 
-function toPhoto(page: CommonsPage): Photo | null {
+const ENTITIES: Record<string, string> = {
+  amp: '&',
+  lt: '<',
+  gt: '>',
+  quot: '"',
+  '#39': "'",
+  apos: "'",
+  nbsp: ' ',
+};
+
+/**
+ * Credit fields come back as HTML. Strip it with plain string work rather than
+ * innerHTML: it keeps this module free of the DOM (so it is testable) and never
+ * hands remote markup to the parser.
+ */
+export function stripHtml(html: string): string {
+  return html
+    .replace(/<[^>]*>/g, ' ')
+    .replace(/&(#?\w+);/g, (match, entity: string) => ENTITIES[entity.toLowerCase()] ?? match)
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+export function toPhoto(page: CommonsPage): Photo | null {
   const info = page.imageinfo?.[0];
-  if (!info) return null;
-  if (EXCLUDED.test(page.title) || EXCLUDED_TITLE.test(page.title)) return null;
+  if (!info?.url) return null;
+  if (EXCLUDED_EXTENSION.test(page.title) || EXCLUDED_TITLE.test(page.title)) return null;
   if (info.mime && !info.mime.startsWith('image/')) return null;
   const meta = info.extmetadata ?? {};
   const author = meta.Artist ? stripHtml(meta.Artist.value) : null;
@@ -43,12 +67,22 @@ function toPhoto(page: CommonsPage): Photo | null {
   };
 }
 
+/**
+ * `formatversion=2` is what makes `query.pages` an array; version 1 returns an
+ * object keyed by page id, which is how this silently returned nothing at all.
+ */
+export function photosFromResponse(body: CommonsResponse): Photo[] {
+  const pages = body.query?.pages;
+  if (!Array.isArray(pages)) return [];
+  return pages.map(toPhoto).filter((photo): photo is Photo => photo !== null);
+}
+
 async function callApi(params: Record<string, string>): Promise<Photo[]> {
   const query = new URLSearchParams({
     action: 'query',
     format: 'json',
+    formatversion: '2',
     origin: '*',
-    formatversion: '1',
     prop: 'imageinfo',
     iiprop: 'url|extmetadata|mime',
     iiurlwidth: '1200',
@@ -56,9 +90,7 @@ async function callApi(params: Record<string, string>): Promise<Photo[]> {
   });
   const response = await fetch(`${API}?${query.toString()}`);
   if (!response.ok) throw new Error(`Commons ${response.status}`);
-  const body = (await response.json()) as { query?: { pages?: CommonsPage[] } };
-  const pages = body.query?.pages ?? [];
-  return pages.map(toPhoto).filter((p): p is Photo => p !== null);
+  return photosFromResponse((await response.json()) as CommonsResponse);
 }
 
 /** Free-text search, which usually nails named venues. */
@@ -120,6 +152,11 @@ export async function loadPhotos(place: Place): Promise<Photo[]> {
       searchByName(place),
       searchByLocation(place, radius),
     ]);
+    // Every lookup failing is a network or API problem, not an absence of
+    // photos: report it instead of caching an empty result.
+    if (results.every((result) => result.status === 'rejected')) {
+      throw new Error('Commons unreachable');
+    }
     const seen = new Set<string>();
     const photos: Photo[] = [];
     for (const result of results) {
