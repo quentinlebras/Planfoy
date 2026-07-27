@@ -806,19 +806,13 @@ a {
   border: 1px solid rgb(255 255 255 / 0.3);
   border-radius: var(--radius);
   box-shadow: var(--shadow-sm);
+  opacity: 0.9;
   overflow: hidden;
-  transition:
-    transform 0.16s,
-    box-shadow 0.16s,
-    border-color 0.16s;
+  transition: opacity 0.16s;
 }
 
 .mini--active {
-  border-color: rgb(255 255 255 / 0.72);
-  box-shadow:
-    0 0 0 2px rgb(255 255 255 / 0.56),
-    var(--shadow-md);
-  transform: translateY(-3px);
+  opacity: 1;
 }
 
 .mini__hit {
