@@ -1,4 +1,5 @@
 import { GROUP_BY_ID } from '../data/taxonomy';
+import { useCoverPhoto } from '../lib/useCoverPhoto';
 import { usePhotos } from '../lib/usePhotos';
 import type { Place } from '../types';
 
@@ -15,7 +16,7 @@ interface Props {
 export function PlaceCover({ place, enabled = true, className = '' }: Props) {
   const { photos, state } = usePhotos(place, enabled);
   const group = GROUP_BY_ID[place.group];
-  const cover = photos[0];
+  const { cover } = useCoverPhoto(place.id, photos);
 
   return (
     <div

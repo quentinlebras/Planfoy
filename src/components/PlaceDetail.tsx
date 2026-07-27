@@ -9,6 +9,7 @@ import {
   googlePlaceUrl,
   wazeUrl,
 } from '../lib/geo';
+import { useCoverPhoto } from '../lib/useCoverPhoto';
 import { usePhotos } from '../lib/usePhotos';
 import { Lightbox } from './Lightbox';
 import type { Place, PlaceEvent } from '../types';
@@ -41,6 +42,7 @@ function duringTrip(event: PlaceEvent): boolean {
 export function PlaceDetail({ place, origin, onClose, onShowOnMap }: Props) {
   const group = GROUP_BY_ID[place.group];
   const { photos, state } = usePhotos(place);
+  const { cover, chooseCover } = useCoverPhoto(place.id, photos);
   const [lightbox, setLightbox] = useState<number | null>(null);
 
   useEffect(() => {
@@ -58,17 +60,20 @@ export function PlaceDetail({ place, origin, onClose, onShowOnMap }: Props) {
   const destination = { lat: place.lat, lon: place.lon };
 
   return (
-    <div className="sheet" role="dialog" aria-modal="true" aria-label={place.name}>
+    <div
+      className="sheet"
+      role="dialog"
+      aria-modal="true"
+      aria-label={place.name}
+      style={{
+        ['--group' as string]: group.color,
+        ['--group-dark' as string]: group.colorDark,
+      }}
+    >
       <div className="sheet__scroll">
-        <header
-          className="sheet__hero"
-          style={{
-            ['--group' as string]: group.color,
-            ['--group-dark' as string]: group.colorDark,
-          }}
-        >
-          {photos[0] ? (
-            <img className="sheet__hero-img" src={photos[0].thumb} alt={place.name} />
+        <header className="sheet__hero">
+          {cover ? (
+            <img className="sheet__hero-img" src={cover.thumb} alt={place.name} />
           ) : (
             <div className="sheet__hero-fallback" aria-hidden="true">
               {place.emoji}
@@ -201,19 +206,43 @@ export function PlaceDetail({ place, origin, onClose, onShowOnMap }: Props) {
 
           <section className="block">
             <h3>Photos</h3>
+            {photos.length > 0 && (
+              <p className="muted">Touche l’étoile pour choisir la miniature de ce lieu.</p>
+            )}
             {state === 'loading' && <p className="muted">Recherche de photos…</p>}
             {photos.length > 0 && (
               <div className="gallery">
                 {photos.map((photo, index) => (
-                  <button
+                  <div
                     key={photo.full}
-                    type="button"
-                    className="gallery__item"
-                    onClick={() => setLightbox(index)}
-                    aria-label={`Agrandir : ${photo.title}`}
+                    className={`gallery__item ${
+                      cover?.full === photo.full ? 'gallery__item--cover' : ''
+                    }`}
                   >
-                    <img src={photo.thumb} alt={photo.title} loading="lazy" />
-                  </button>
+                    <button
+                      type="button"
+                      className="gallery__open"
+                      onClick={() => setLightbox(index)}
+                      aria-label={`Agrandir : ${photo.title}`}
+                    >
+                      <img src={photo.thumb} alt={photo.title} loading="lazy" />
+                    </button>
+                    <button
+                      type="button"
+                      className={`gallery__cover ${
+                        cover?.full === photo.full ? 'is-selected' : ''
+                      }`}
+                      onClick={() => chooseCover(photo)}
+                      aria-label={
+                        cover?.full === photo.full
+                          ? `${photo.title} est la miniature actuelle`
+                          : `Choisir ${photo.title} comme miniature`
+                      }
+                      aria-pressed={cover?.full === photo.full}
+                    >
+                      ★
+                    </button>
+                  </div>
                 ))}
               </div>
             )}

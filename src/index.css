@@ -1216,20 +1216,60 @@ a {
 }
 
 .gallery__item {
+  position: relative;
   padding: 0;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   overflow: hidden;
   background: var(--surface-2);
-  cursor: pointer;
   aspect-ratio: 4 / 3;
 }
 
-.gallery__item img {
+.gallery__item--cover {
+  border-color: var(--group);
+  box-shadow: 0 0 0 2px var(--group);
+}
+
+.gallery__open {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+}
+
+.gallery__open img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.gallery__cover {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid rgb(255 255 255 / 0.75);
+  border-radius: 50%;
+  background: rgb(20 18 16 / 0.66);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+}
+
+.gallery__cover.is-selected {
+  border-color: #fde68a;
+  background: #fde68a;
+  color: #713f12;
 }
 
 .links {
