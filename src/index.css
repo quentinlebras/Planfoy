@@ -814,9 +814,9 @@ a {
 }
 
 .mini--active {
-  border-color: var(--group);
+  border-color: rgb(255 255 255 / 0.72);
   box-shadow:
-    0 0 0 3px var(--group),
+    0 0 0 2px rgb(255 255 255 / 0.56),
     var(--shadow-md);
   transform: translateY(-3px);
 }
@@ -844,13 +844,21 @@ a {
 }
 
 .mini__body {
-  position: relative;
+  position: absolute;
+  inset: 0;
   z-index: 1;
   width: 100%;
-  padding: 48px 12px 13px;
-  background: linear-gradient(to top, rgb(7 11 9 / 0.9) 8%, rgb(7 11 9 / 0.68) 68%, transparent);
-  backdrop-filter: blur(9px);
-  -webkit-backdrop-filter: blur(9px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 12px 12px 13px;
+  background: linear-gradient(
+    to top,
+    rgb(5 8 6 / 0.94) 0%,
+    rgb(5 8 6 / 0.82) 34%,
+    rgb(5 8 6 / 0.46) 58%,
+    transparent 82%
+  );
   color: #fff;
 }
 
@@ -1439,15 +1447,14 @@ code {
     inset: -58px 0 0;
     background: linear-gradient(
       to top,
-      color-mix(in srgb, var(--carousel-tint-dark) 78%, transparent) 0%,
-      color-mix(in srgb, var(--carousel-tint) 42%, transparent) 52%,
+      rgb(6 10 8 / 0.68) 0%,
+      rgb(6 10 8 / 0.3) 52%,
       transparent 100%
     );
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
     mask-image: none;
     -webkit-mask-image: none;
-    transition: background 220ms ease;
   }
 
   .topbar {
