@@ -33,11 +33,11 @@ Built as a static single-page app, so it is free to host and needs no API key.
 
 ## Photos
 
-The source dataset only ships image *search* links, not images. The app therefore queries
-[Wikimedia Commons](https://commons.wikimedia.org) from the browser — by name and by coordinates,
-which is what covers the unnamed natural sites — and caches results in `localStorage` for two
-weeks. Photos remain the property of their authors; the lightbox shows author and license. Places
-with no freely licensed photo get a tinted cover plus external search links.
+The source dataset includes curated image links for every place. When no curated set is available,
+the app queries [Wikimedia Commons](https://commons.wikimedia.org) from the browser — by name and by
+coordinates — and caches results in `localStorage` for two weeks. Photos remain the property of
+their authors; the lightbox links back to the image source and shows Commons author and license
+metadata when available. Places with no photo get a tinted cover plus external search links.
 
 The API contract matters more than it looks: `formatversion=2` is what makes `query.pages` an
 array, and requesting version 1 makes every lookup fail *silently* — empty covers everywhere with

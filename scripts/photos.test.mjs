@@ -130,6 +130,29 @@ test('requests ask Commons for the array response shape', async () => {
   assert.equal(photos.length, 1);
 });
 
+test('curated image links are returned without a Commons request', async () => {
+  const urls = stubBrowser(() => {
+    throw new Error('Commons should not be called');
+  });
+  const photos = await loadPhotos({
+    id: 'test-curated',
+    name: 'Couriot',
+    curatedImageLinks: ['https://example.com/couriot.jpg'],
+  });
+
+  assert.equal(urls.length, 0);
+  assert.deepEqual(photos, [
+    {
+      title: 'Couriot — photo 1',
+      thumb: 'https://example.com/couriot.jpg',
+      full: 'https://example.com/couriot.jpg',
+      descriptionUrl: 'https://example.com/couriot.jpg',
+      author: null,
+      license: null,
+    },
+  ]);
+});
+
 test('a total lookup failure is reported, not cached as empty', async () => {
   stubBrowser(() => ({}));
   globalThis.fetch = async () => ({ ok: false, status: 503 });

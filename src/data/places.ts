@@ -25,6 +25,7 @@ interface RawPlace {
   dated_events_2026: RawEvent[];
   official_or_reference_url: string | null;
   image_links: string[];
+  curated_image_links?: string[];
   verification_status: string;
   notes: string | null;
   warnings: string[];
@@ -101,6 +102,7 @@ function build(place: RawPlace, home: LatLon): Place {
     tripEvents: events.filter(overlapsTrip),
     officialUrl: place.official_or_reference_url,
     searchLinks: place.image_links.filter((url) => /search|Special:MediaSearch/.test(url)),
+    curatedImageLinks: place.curated_image_links ?? [],
     imageQuery: imageQuery(place),
     verified: place.verification_status.startsWith('verified'),
     verificationStatus: place.verification_status,
