@@ -50,6 +50,7 @@ export interface Place {
   tripEvents: PlaceEvent[];
   officialUrl: string | null;
   searchLinks: string[];
+  curatedImageLinks: string[];
   imageQuery: string;
   verified: boolean;
   verificationStatus: string;

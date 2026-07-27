@@ -58,7 +58,7 @@ export function Lightbox({ photos, index, onIndexChange, onClose }: Props) {
       <figcaption className="lightbox__caption">
         <span>{photo.title}</span>
         <span className="muted">
-          {photo.author ? `© ${photo.author}` : 'Wikimedia Commons'}
+          {photo.author ? `© ${photo.author}` : 'Source de l’image'}
           {photo.license ? ` · ${photo.license}` : ''} ·{' '}
           <a href={photo.descriptionUrl} target="_blank" rel="noreferrer noopener">
             source

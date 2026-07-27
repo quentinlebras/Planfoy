@@ -105,12 +105,12 @@ the app says so in the info dialog rather than pretending the data is live.
 
 ## Photos
 
-The dataset ships image *search* links, not images. `lib/images.ts` queries Wikimedia Commons from
-the browser, two ways in parallel: free-text search on the place name, and geosearch around its
-coordinates (which is what covers unnamed natural sites). Results are cached in `localStorage`
-under `planfoy:photos:v3:<id>` for 14 days — bump the prefix when changing the shape of what is
-cached. Places with no freely licensed photo get a tinted cover plus external search links, which
-is expected for the smaller nature spots.
+The dataset's `curated_image_links` are used first. For places without a curated set,
+`lib/images.ts` queries Wikimedia Commons from the browser, two ways in parallel: free-text search
+on the place name, and geosearch around its coordinates (which is what covers unnamed natural
+sites). Commons results are cached in `localStorage` under `planfoy:photos:v3:<id>` for 14 days —
+bump the prefix when changing the shape of what is cached. Places with no photo get a tinted cover
+plus external search links.
 
 ## Itineraries
 

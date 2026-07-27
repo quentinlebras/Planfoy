@@ -140,6 +140,17 @@ function writeCache(id: string, photos: Photo[]) {
 const inFlight = new Map<string, Promise<Photo[]>>();
 
 export async function loadPhotos(place: Place): Promise<Photo[]> {
+  if (place.curatedImageLinks?.length > 0) {
+    return place.curatedImageLinks.map((url, index) => ({
+      title: `${place.name} — photo ${index + 1}`,
+      thumb: url,
+      full: url,
+      descriptionUrl: url,
+      author: null,
+      license: null,
+    }));
+  }
+
   const cached = readCache(place.id);
   if (cached) return cached;
 
