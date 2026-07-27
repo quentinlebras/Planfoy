@@ -8,6 +8,7 @@ import { BASEMAPS, type BasemapId } from './lib/mapStyles';
 import { EMPTY_FILTERS, matches, type Filters } from './lib/filters';
 import { useLocalStorage } from './lib/useLocalStorage';
 import { routingOrigin, useHome } from './lib/useHome';
+import pilatMark from './assets/pilat.svg';
 
 function placeIdFromHash(): string | null {
   const match = window.location.hash.match(/^#\/lieu\/([a-z0-9]+)$/i);
@@ -67,7 +68,15 @@ export default function App() {
   return (
     <div className="app">
       <header className="topbar">
-        <h1>Planfoy 2026</h1>
+        <span
+          className="topbar__mark"
+          role="img"
+          aria-label="Pilat 2026"
+          style={{
+            maskImage: `url(${pilatMark})`,
+            WebkitMaskImage: `url(${pilatMark})`,
+          }}
+        />
         <div className="basemaps basemaps--header" aria-label="Fond de carte">
           {BASEMAPS.map((option) => (
             <button
