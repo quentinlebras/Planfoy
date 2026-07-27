@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useRef } from 'react';
-import { GROUP_BY_ID } from '../data/taxonomy';
 import { formatDrive, formatKm } from '../lib/geo';
 import { PlaceCover } from './PlaceCover';
 import type { Place } from '../types';
@@ -82,31 +81,20 @@ export function Carousel({
   }, [activeId, centerOn, visible]);
 
   if (!visible) return null;
-  const tintPlace = places.find((place) => place.id === activeId) ?? places[0];
-  const tintGroup = tintPlace ? GROUP_BY_ID[tintPlace.group] : GROUP_BY_ID.nature;
 
   return (
-    <section
-      className="carousel"
-      aria-label="Lieux"
-      style={{
-        ['--carousel-tint' as string]: tintGroup.color,
-        ['--carousel-tint-dark' as string]: tintGroup.colorDark,
-      }}
-    >
+    <section className="carousel" aria-label="Lieux">
       <div className="carousel__scroller" ref={scrollerRef}>
           {places.length === 0 && (
             <p className="carousel__empty">Aucun lieu ne correspond aux filtres.</p>
           )}
           {places.map((place) => {
-            const group = GROUP_BY_ID[place.group];
             const active = place.id === activeId;
             return (
               <article
                 key={place.id}
                 data-card-id={place.id}
                 className={`mini ${active ? 'mini--active' : ''}`}
-                style={{ ['--group' as string]: group.color }}
               >
                 <button
                   type="button"
