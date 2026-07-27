@@ -252,36 +252,14 @@ a {
   font-size: 17px;
 }
 
-.topbar__brand p {
-  color: var(--text-2);
-  font-size: 12px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.topbar__actions {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex: none;
-}
-
 /* ---------------------------------------------------------------- filters */
 
 .filters {
   flex: none;
-  padding: 10px 14px;
+  padding: 7px 14px;
   background: var(--surface);
   border-bottom: 1px solid var(--border);
   z-index: 15;
-}
-
-.filters__row {
-  display: flex;
-  justify-content: flex-end;
-  gap: 8px;
-  align-items: center;
 }
 
 .search {
@@ -335,7 +313,7 @@ a {
 .chips {
   display: flex;
   gap: 6px;
-  margin-top: 9px;
+  margin-top: 0;
   overflow-x: auto;
   scrollbar-width: none;
   padding-bottom: 2px;
@@ -614,7 +592,7 @@ a {
   right: 52px;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 8px;
   pointer-events: none;
   z-index: 5;
@@ -633,6 +611,12 @@ a {
   backdrop-filter: blur(8px);
   border: 1px solid var(--border);
   box-shadow: var(--shadow-sm);
+}
+
+.basemaps--header {
+  flex: none;
+  background: var(--surface-2);
+  backdrop-filter: none;
 }
 
 .basemaps__item {

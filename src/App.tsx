@@ -1,21 +1,13 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { MapView, type MapController } from './components/MapView';
 import { Carousel } from './components/Carousel';
-import { ListView } from './components/ListView';
 import { PlaceDetail } from './components/PlaceDetail';
-import { OriginDialog } from './components/OriginDialog';
 import { FilterBar } from './components/FilterBar';
-import { InfoDialog } from './components/InfoDialog';
 import { PLACES, PLACE_BY_ID, withDistances } from './data/places';
-import { GROUPS } from './data/taxonomy';
 import { BASEMAPS, type BasemapId } from './lib/mapStyles';
-import { googleDirectionsUrl } from './lib/geo';
 import { EMPTY_FILTERS, matches, type Filters } from './lib/filters';
 import { useLocalStorage } from './lib/useLocalStorage';
 import { routingOrigin, useHome } from './lib/useHome';
-import type { Place } from './types';
-
-type View = 'map' | 'list';
 
 function placeIdFromHash(): string | null {
   const match = window.location.hash.match(/^#\/lieu\/([a-z0-9]+)$/i);
@@ -23,15 +15,12 @@ function placeIdFromHash(): string | null {
 }
 
 export default function App() {
-  const { home, override: setHome, reset: resetHome } = useHome();
+  const { home } = useHome();
   const [basemap, setBasemap] = useLocalStorage<BasemapId>('planfoy:basemap:v1', 'plan');
   const [filters, setFilters] = useState<Filters>(EMPTY_FILTERS);
-  const [view, setView] = useState<View>('map');
   const [activeId, setActiveId] = useState<string | null>(null);
   const [detailId, setDetailId] = useState<string | null>(null);
   const [carouselVisible, setCarouselVisible] = useState(true);
-  const [originOpen, setOriginOpen] = useState(false);
-  const [infoOpen, setInfoOpen] = useState(false);
   const mapRef = useRef<MapController | null>(null);
 
   const origin = routingOrigin(home);
@@ -75,82 +64,31 @@ export default function App() {
     setDetailId(id);
   }, []);
 
-  const itinerary = useCallback(
-    (place: Place) => {
-      window.open(
-        googleDirectionsUrl(origin, { lat: place.lat, lon: place.lon }),
-        '_blank',
-        'noopener,noreferrer',
-      );
-    },
-    [origin],
-  );
-
-  const locateFromList = useCallback(
-    (id: string) => {
-      setView('map');
-      setCarouselVisible(true);
-      // Wait for the map to be laid out again before flying to the marker.
-      requestAnimationFrame(() => focus(id, false));
-    },
-    [focus],
-  );
-
   return (
-    <div className={`app app--${view}`}>
+    <div className="app">
       <header className="topbar">
-        <div className="topbar__brand">
-          <span className="topbar__logo" aria-hidden="true">
-            🏡
-          </span>
-          <div>
-            <h1>Planfoy 2026</h1>
-            <p>
-              Pilat, Saint-Étienne &amp; alentours · {PLACES.length} lieux
-            </p>
-          </div>
-        </div>
-        <div className="topbar__actions">
-          <div className="segmented segmented--view">
+        <h1>Planfoy 2026</h1>
+        <div className="basemaps basemaps--header" aria-label="Fond de carte">
+          {BASEMAPS.map((option) => (
             <button
+              key={option.id}
               type="button"
-              className={`segmented__item ${view === 'map' ? 'is-on' : ''}`}
-              onClick={() => setView('map')}
+              className={`basemaps__item ${basemap === option.id ? 'is-on' : ''}`}
+              onClick={() => setBasemap(option.id)}
+              title={`Fond de carte : ${option.label}`}
+              aria-pressed={basemap === option.id}
             >
-              🗺️ Carte
+              <span aria-hidden="true">{option.emoji}</span>
+              <span className="basemaps__label">{option.label}</span>
             </button>
-            <button
-              type="button"
-              className={`segmented__item ${view === 'list' ? 'is-on' : ''}`}
-              onClick={() => setView('list')}
-            >
-              ☰ Liste
-            </button>
-          </div>
-          <button
-            type="button"
-            className="btn btn--ghost"
-            onClick={() => setOriginOpen(true)}
-            title="Changer le point de départ des itinéraires"
-          >
-            <span aria-hidden="true">🧭</span>
-            <span className="btn__label">Départ</span>
-          </button>
-          <button
-            type="button"
-            className="btn btn--ghost btn--icon"
-            onClick={() => setInfoOpen(true)}
-            aria-label="À propos et légende"
-          >
-            ⓘ
-          </button>
+          ))}
         </div>
       </header>
 
-      <FilterBar filters={filters} onChange={setFilters} resultCount={visible.length} />
+      <FilterBar filters={filters} onChange={setFilters} />
 
       <main className="stage">
-        <div className="stage__map" hidden={view !== 'map'}>
+        <div className="stage__map">
           <MapView
             places={visible}
             home={home}
@@ -167,20 +105,6 @@ export default function App() {
           />
 
           <div className="map__tools">
-            <div className="basemaps">
-              {BASEMAPS.map((option) => (
-                <button
-                  key={option.id}
-                  type="button"
-                  className={`basemaps__item ${basemap === option.id ? 'is-on' : ''}`}
-                  onClick={() => setBasemap(option.id)}
-                  title={`Fond de carte : ${option.label}`}
-                >
-                  <span aria-hidden="true">{option.emoji}</span>
-                  <span className="basemaps__label">{option.label}</span>
-                </button>
-              ))}
-            </div>
             <div className="map__buttons">
               <button
                 type="button"
@@ -201,31 +125,12 @@ export default function App() {
             </div>
           </div>
 
-          <div className="map__legend">
-            {GROUPS.map((group) => (
-              <span key={group.id} className="legend__item">
-                <i style={{ background: group.color }} aria-hidden="true" />
-                {group.short}
-              </span>
-            ))}
-          </div>
-
           <Carousel
             places={visible}
             activeId={activeId}
             visible={carouselVisible}
             onActivate={(id) => focus(id, true)}
             onOpen={openDetail}
-          />
-        </div>
-
-        <div className="stage__list" hidden={view !== 'list'}>
-          <ListView
-            places={visible}
-            activeId={activeId}
-            onLocate={locateFromList}
-            onOpen={openDetail}
-            onItinerary={itinerary}
           />
         </div>
       </main>
@@ -237,22 +142,11 @@ export default function App() {
           onClose={() => setDetailId(null)}
           onShowOnMap={() => {
             setDetailId(null);
-            setView('map');
             setCarouselVisible(true);
             requestAnimationFrame(() => focus(detail.id, false));
           }}
         />
       )}
-
-      {originOpen && (
-        <OriginDialog
-          home={home}
-          onSave={setHome}
-          onReset={resetHome}
-          onClose={() => setOriginOpen(false)}
-        />
-      )}
-      {infoOpen && <InfoDialog onClose={() => setInfoOpen(false)} />}
     </div>
   );
 }
