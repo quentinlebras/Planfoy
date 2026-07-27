@@ -94,7 +94,13 @@ export default function App() {
         </div>
       </header>
 
-      <FilterBar filters={filters} onChange={setFilters} />
+      <FilterBar
+        filters={filters}
+        onChange={(next) => {
+          setFilters(next);
+          setCarouselVisible(true);
+        }}
+      />
 
       <main className="stage">
         <div className="stage__map">
