@@ -1,7 +1,7 @@
 import { haversineKm, type LatLon } from '../lib/geo';
 import type { Place, PlaceEvent } from '../types';
 import raw from './recommandations.json';
-import { CATEGORIES, FALLBACK_CATEGORY } from './taxonomy';
+import { CATEGORIES, FALLBACK_CATEGORY, GROUP_RANK } from './taxonomy';
 import { FALLBACK_PIN, TRIP_END, TRIP_START } from './home';
 
 interface RawEvent {
@@ -111,7 +111,9 @@ function build(place: RawPlace, home: LatLon): Place {
   };
 }
 
-export const PLACES: Place[] = (raw.places as RawPlace[]).map((p) => build(p, FALLBACK_PIN));
+export const PLACES: Place[] = (raw.places as RawPlace[])
+  .map((p) => build(p, FALLBACK_PIN))
+  .sort((a, b) => GROUP_RANK[a.group] - GROUP_RANK[b.group]);
 
 export const PLACE_BY_ID = new Map(PLACES.map((p) => [p.id, p]));
 

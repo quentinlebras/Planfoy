@@ -2,14 +2,6 @@ import type { CategoryMeta, Group, GroupId } from '../types';
 
 export const GROUPS: Group[] = [
   {
-    id: 'culture',
-    label: 'Culture & musées',
-    short: 'Culture',
-    emoji: '🏛️',
-    color: '#7c3aed',
-    colorDark: '#5b21b6',
-  },
-  {
     id: 'nature',
     label: 'Nature & panoramas',
     short: 'Nature',
@@ -26,6 +18,14 @@ export const GROUPS: Group[] = [
     colorDark: '#075985',
   },
   {
+    id: 'enfants',
+    label: 'Enfants & animaux',
+    short: 'Enfants',
+    emoji: '🧸',
+    color: '#db2777',
+    colorDark: '#9d174d',
+  },
+  {
     id: 'sorties',
     label: 'Bars, concerts & guinguettes',
     short: 'Sorties',
@@ -34,12 +34,12 @@ export const GROUPS: Group[] = [
     colorDark: '#9a3412',
   },
   {
-    id: 'enfants',
-    label: 'Enfants & animaux',
-    short: 'Enfants',
-    emoji: '🧸',
-    color: '#db2777',
-    colorDark: '#9d174d',
+    id: 'culture',
+    label: 'Culture & musées',
+    short: 'Culture',
+    emoji: '🏛️',
+    color: '#7c3aed',
+    colorDark: '#5b21b6',
   },
   {
     id: 'ville',
@@ -54,6 +54,10 @@ export const GROUPS: Group[] = [
 export const GROUP_BY_ID: Record<GroupId, Group> = Object.fromEntries(
   GROUPS.map((g) => [g.id, g]),
 ) as Record<GroupId, Group>;
+
+export const GROUP_RANK: Record<GroupId, number> = Object.fromEntries(
+  GROUPS.map((group, index) => [group.id, index]),
+) as Record<GroupId, number>;
 
 /** Every `category` value present in the dataset, mapped to a group, a label and an icon. */
 export const CATEGORIES: Record<string, Omit<CategoryMeta, 'id'>> = {

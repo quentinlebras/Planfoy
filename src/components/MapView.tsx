@@ -20,6 +20,7 @@ interface Props {
   basemap: BasemapId;
   activeId: string | null;
   onSelect: (id: string) => void;
+  onPan: () => void;
   onMapReady: (controller: MapController) => void;
 }
 
@@ -70,17 +71,27 @@ function homeElement(approximate: boolean): HTMLElement {
   return el;
 }
 
-export function MapView({ places, home, basemap, activeId, onSelect, onMapReady }: Props) {
+export function MapView({
+  places,
+  home,
+  basemap,
+  activeId,
+  onSelect,
+  onPan,
+  onMapReady,
+}: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const markersRef = useRef(new Map<string, Marker>());
   const homeMarkerRef = useRef<Marker | null>(null);
   const placesRef = useRef(places);
   const selectRef = useRef(onSelect);
+  const panRef = useRef(onPan);
   const homeRef = useRef(home);
 
   placesRef.current = places;
   selectRef.current = onSelect;
+  panRef.current = onPan;
   homeRef.current = home;
 
   // Create the map once; style, markers and camera are updated by later effects.
@@ -113,6 +124,8 @@ export function MapView({ places, home, basemap, activeId, onSelect, onMapReady 
     };
     applyDensity();
     map.on('zoom', applyDensity);
+    const handlePan = () => panRef.current();
+    map.on('dragstart', handlePan);
 
     const boundsOf = (items: Place[]) => {
       const bounds = new LngLatBounds();
@@ -151,6 +164,7 @@ export function MapView({ places, home, basemap, activeId, onSelect, onMapReady 
     const markers = markersRef.current;
     return () => {
       map.off('zoom', applyDensity);
+      map.off('dragstart', handlePan);
       map.remove();
       mapRef.current = null;
       markers.clear();

@@ -2,7 +2,6 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { MapView, type MapController } from './components/MapView';
 import { Carousel } from './components/Carousel';
 import { ListView } from './components/ListView';
-import { PlaceCard } from './components/PlaceCard';
 import { PlaceDetail } from './components/PlaceDetail';
 import { OriginDialog } from './components/OriginDialog';
 import { FilterBar } from './components/FilterBar';
@@ -30,7 +29,7 @@ export default function App() {
   const [view, setView] = useState<View>('map');
   const [activeId, setActiveId] = useState<string | null>(null);
   const [detailId, setDetailId] = useState<string | null>(null);
-  const [collapsed, setCollapsed] = useState(false);
+  const [carouselVisible, setCarouselVisible] = useState(true);
   const [originOpen, setOriginOpen] = useState(false);
   const [infoOpen, setInfoOpen] = useState(false);
   const mapRef = useRef<MapController | null>(null);
@@ -41,7 +40,6 @@ export default function App() {
     () => places.filter((place) => matches(place, filters)),
     [places, filters],
   );
-  const active = activeId ? (visible.find((p) => p.id === activeId) ?? null) : null;
   const detail = detailId ? (places.find((p) => p.id === detailId) ?? null) : null;
 
   // Shareable links: #/lieu/<id> opens straight onto a place.
@@ -91,7 +89,7 @@ export default function App() {
   const locateFromList = useCallback(
     (id: string) => {
       setView('map');
-      setCollapsed(false);
+      setCarouselVisible(true);
       // Wait for the map to be laid out again before flying to the marker.
       requestAnimationFrame(() => focus(id, false));
     },
@@ -158,7 +156,11 @@ export default function App() {
             home={home}
             basemap={basemap}
             activeId={activeId}
-            onSelect={(id) => focus(id, false)}
+            onSelect={(id) => {
+              setCarouselVisible(true);
+              focus(id, false);
+            }}
+            onPan={() => setCarouselVisible(false)}
             onMapReady={(controller) => {
               mapRef.current = controller;
             }}
@@ -208,23 +210,12 @@ export default function App() {
             ))}
           </div>
 
-          {collapsed && active && (
-            <PlaceCard
-              place={active}
-              onOpen={() => openDetail(active.id)}
-              onClose={() => setActiveId(null)}
-              onItinerary={() => itinerary(active)}
-            />
-          )}
-
           <Carousel
             places={visible}
             activeId={activeId}
-            collapsed={collapsed}
-            onToggle={() => setCollapsed(!collapsed)}
+            visible={carouselVisible}
             onActivate={(id) => focus(id, true)}
             onOpen={openDetail}
-            onItinerary={itinerary}
           />
         </div>
 
@@ -247,7 +238,7 @@ export default function App() {
           onShowOnMap={() => {
             setDetailId(null);
             setView('map');
-            setCollapsed(false);
+            setCarouselVisible(true);
             requestAnimationFrame(() => focus(detail.id, false));
           }}
         />
