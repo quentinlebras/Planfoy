@@ -46,18 +46,6 @@ export function FilterBar({ filters, onChange, resultCount }: Props) {
   return (
     <div className="filters">
       <div className="filters__row">
-        <div className="search">
-          <span className="search__icon" aria-hidden="true">
-            🔍
-          </span>
-          <input
-            type="search"
-            value={filters.query}
-            placeholder="Chercher un lieu, une commune…"
-            onChange={(event) => patch({ query: event.target.value })}
-            aria-label="Rechercher un lieu"
-          />
-        </div>
         <button
           type="button"
           className={`btn btn--ghost filters__more ${expanded ? 'is-open' : ''}`}

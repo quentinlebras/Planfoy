@@ -7,11 +7,9 @@ import type { Place } from '../types';
 interface Props {
   places: Place[];
   activeId: string | null;
-  collapsed: boolean;
-  onToggle: () => void;
+  visible: boolean;
   onActivate: (id: string) => void;
   onOpen: (id: string) => void;
-  onItinerary: (place: Place) => void;
 }
 
 /** Ignore scroll-driven activation for a moment after we scroll programmatically. */
@@ -20,18 +18,14 @@ const SUPPRESS_MS = 750;
 export function Carousel({
   places,
   activeId,
-  collapsed,
-  onToggle,
+  visible,
   onActivate,
   onOpen,
-  onItinerary,
 }: Props) {
   const scrollerRef = useRef<HTMLDivElement>(null);
   const suppressUntil = useRef(0);
   const selfReported = useRef<string | null>(null);
   const frame = useRef(0);
-
-  const activeIndex = places.findIndex((p) => p.id === activeId);
 
   const centerOn = useCallback((id: string, smooth: boolean) => {
     const scroller = scrollerRef.current;
@@ -46,7 +40,7 @@ export function Carousel({
   // Sliding the carousel moves the map: activate whichever card sits in the middle.
   useEffect(() => {
     const scroller = scrollerRef.current;
-    if (!scroller || collapsed) return;
+    if (!scroller || !visible) return;
 
     const handleScroll = () => {
       cancelAnimationFrame(frame.current);
@@ -75,70 +69,23 @@ export function Carousel({
       scroller.removeEventListener('scroll', handleScroll);
       cancelAnimationFrame(frame.current);
     };
-  }, [activeId, collapsed, onActivate, places]);
+  }, [activeId, onActivate, places, visible]);
 
   // A marker click (or list click) scrolls the matching card into the middle.
   useEffect(() => {
-    if (!activeId || collapsed) return;
+    if (!activeId || !visible) return;
     if (selfReported.current === activeId) {
       selfReported.current = null;
       return;
     }
     centerOn(activeId, true);
-  }, [activeId, collapsed, centerOn]);
+  }, [activeId, centerOn, visible]);
 
-  const step = (direction: -1 | 1) => {
-    if (places.length === 0) return;
-    const from = activeIndex >= 0 ? activeIndex : 0;
-    const next = Math.min(places.length - 1, Math.max(0, from + direction));
-    onActivate(places[next].id);
-  };
+  if (!visible) return null;
 
   return (
-    <section className={`carousel ${collapsed ? 'carousel--collapsed' : ''}`} aria-label="Lieux">
-      <div className="carousel__handle">
-        <button
-          type="button"
-          className="carousel__grip"
-          onClick={onToggle}
-          aria-expanded={!collapsed}
-        >
-          <span className="carousel__grip-bar" aria-hidden="true" />
-          <span className="carousel__grip-label">
-            {collapsed ? `Afficher les ${places.length} lieux` : 'Masquer le carrousel'}
-          </span>
-        </button>
-        {!collapsed && (
-          <div className="carousel__nav">
-            <button
-              type="button"
-              className="round"
-              onClick={() => step(-1)}
-              disabled={activeIndex <= 0}
-              aria-label="Lieu précédent"
-            >
-              ‹
-            </button>
-            <span className="carousel__counter">
-              {activeIndex >= 0
-                ? `${activeIndex + 1} / ${places.length}`
-                : `${places.length} lieux`}
-            </span>
-            <button
-              type="button"
-              className="round"
-              onClick={() => step(1)}
-              disabled={activeIndex === places.length - 1}
-              aria-label="Lieu suivant"
-            >
-              ›
-            </button>
-          </div>
-        )}
-      </div>
-
-      {!collapsed && (
-        <div className="carousel__scroller" ref={scrollerRef}>
+    <section className="carousel" aria-label="Lieux">
+      <div className="carousel__scroller" ref={scrollerRef}>
           {places.length === 0 && (
             <p className="carousel__empty">Aucun lieu ne correspond aux filtres.</p>
           )}
@@ -172,22 +119,6 @@ export function Carousel({
                     </p>
                   </div>
                 </button>
-                <div className="mini__actions">
-                  <button
-                    type="button"
-                    className="btn btn--tiny btn--primary"
-                    onClick={() => onItinerary(place)}
-                  >
-                    Itinéraire
-                  </button>
-                  <button
-                    type="button"
-                    className="btn btn--tiny"
-                    onClick={() => onOpen(place.id)}
-                  >
-                    Détails
-                  </button>
-                </div>
                 {place.tripEvents.length > 0 && (
                   <span className="mini__badge" title="Événement pendant le séjour">
                     ★
@@ -196,8 +127,7 @@ export function Carousel({
               </article>
             );
           })}
-        </div>
-      )}
+      </div>
     </section>
   );
 }

@@ -49,7 +49,7 @@ src/
   components/
     MapView.tsx              # MapLibre wrapper, HTML markers
     Carousel.tsx             # bottom strip, two-way synced with the map
-    ListView.tsx  FilterBar.tsx  PlaceCard.tsx  PlaceCover.tsx
+    ListView.tsx  FilterBar.tsx  PlaceCover.tsx
     PlaceDetail.tsx          # full-screen sheet
     Lightbox.tsx  OriginDialog.tsx  InfoDialog.tsx
 scripts/
