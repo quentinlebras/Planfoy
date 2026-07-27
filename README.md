@@ -33,7 +33,7 @@ Built as a static single-page app, so it is free to host and needs no API key.
 
 ## Photos
 
-The source dataset includes curated image links for most places. When no curated set is available,
+The source dataset includes curated image links for every place. When no curated set is available,
 the app queries [Wikimedia Commons](https://commons.wikimedia.org) from the browser — by name and by
 coordinates — and caches results in `localStorage` for two weeks. Photos remain the property of
 their authors; the lightbox links back to the image source and shows Commons author and license

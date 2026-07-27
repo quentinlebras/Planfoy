@@ -1237,7 +1237,15 @@
       ],
       "verification_status": "verified_or_best_available",
       "notes": null,
-      "warnings": []
+      "warnings": [],
+      "curated_image_links": [
+        "https://woody.cloudly.space/app/uploads/hautlignon/2024/04/thumbs/DJI_0575-1920x960-crop-1712131481.webp",
+        "https://cdn-s-www.ledauphine.com/images/AC954585-37C1-4494-A34E-8AD11C4B47AF/NW_raw/le-lac-de-devesset-dispose-d-une-plage-photo-archives-le-dl-jean-claude-lagrange-1627319723.jpg",
+        "https://www.campings.com/img/_/landscape-medium/77173/53755bac-a730-4817-ab3a-2f6a6c3dbab5.jpg/camping-du-lac-de-devesset-77173-5.jpg",
+        "https://www.francevelotourisme.com/sites/default/files/styles/slider_iti/public/sit/media/c9e5ffa6-7681-471f-bc9c-88cf1b2dbaa8/arrivee-20au-20lac-20de-20devesset.jpg.webp?itok=nT64o8kK",
+        "https://static-maps.alltrails.com/production/at-map/66925384/v1-trail-france-ardeche-tour-du-lac-de-devesset-at-map-66925384-1689176096-300w250h-en-US-i-1-style_3.png",
+        "https://www.inauvergnerhonealpes.com/wp-content/uploads/external/328c7bcc71dbc8ef02c6b1620d3f5576-20963013-1600x900.jpg"
+      ]
     },
     {
       "id": "sw02",
@@ -1263,7 +1271,15 @@
       ],
       "verification_status": "verified_or_best_available",
       "notes": null,
-      "warnings": []
+      "warnings": [],
+      "curated_image_links": [
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/a2/42/26/lac-de-lavalette.jpg?w=1200&h=-1&s=1",
+        "https://img.altituderando.com/1200x/3d/27/doc759974.jpg",
+        "https://woody.cloudly.space/app/uploads/hautlignon/2024/05/thumbs/top-panorama-lavalette-1920x960.webp",
+        "https://www.myhauteloire.fr/app/uploads/2023/08/vue-drone-lac-lavalette-lapte-haute-loire.webp",
+        "https://c8.alamy.com/comp/2GPGXFH/france-haute-loire-lapte-lavalette-dam-on-the-lignon-the-main-supplier-of-drinking-water-to-the-agglomeration-of-saint-tienne-around-yssingeaux-aerial-view-2GPGXFH.jpg",
+        "https://l450v.alamy.com/450v/2gpgxfh/france-haute-loire-lapte-lavalette-dam-on-the-lignon-the-main-supplier-of-drinking-water-to-the-agglomeration-of-saint-tienne-around-yssingeaux-aerial-view-2gpgxfh.jpg"
+      ]
     },
     {
       "id": "sw03",
@@ -1289,7 +1305,15 @@
       ],
       "verification_status": "verified_or_best_available",
       "notes": null,
-      "warnings": []
+      "warnings": [],
+      "curated_image_links": [
+        "https://cdn-s-www.leprogres.fr/images/0B2DF8A8-389B-4274-8892-3731C04FDF7F/NW_raw/la-plage-est-souvent-un-lieu-privilegie-par-les-touristes-photo-yves-salvat-1692469668.jpg",
+        "https://woody.cloudly.space/app/uploads/hautlignon/2024/11/thumbs/la-plage-Ete-2024-Copyright-Nancy-Epalle-1-1920x960-crop-1731407690.webp",
+        "https://www.petitfute.com/medias/mag/29419/900_600/30902-le-chambon-sur-lignon-le-chambon-sur-lignon-balade.jpg",
+        "https://www.lacommere43.fr/media/k2/items/cache/500d3c1736a9000dca7523ff06eb1a65_3_XL.jpg?t=1770815353",
+        "https://cdn3.park4night.com/lieu/139601_139700/139601_gd.jpg",
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/03/6f/11/the-beach-on-the-river.jpg?w=1200&h=-1&s=1"
+      ]
     },
     {
       "id": "sw04",
@@ -1317,6 +1341,14 @@
       "warnings": [
         "Non surveillé",
         "Courant et profondeur variables"
+      ],
+      "curated_image_links": [
+        "https://files.structurae.net/files/photos/1/291018f0002.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Le_Chambon.Pont_de_Mars.jpg/3840px-Le_Chambon.Pont_de_Mars.jpg",
+        "https://files.structurae.net/files/photos/1/291018f0003.jpg",
+        "https://files.structurae.net/files/photos/1/291018f0004.jpg",
+        "https://files.structurae.net/files/photos/1/291018f0001.jpg",
+        "http://img.over-blog-kiwi.com/0/75/75/33/20140228/ob_c407d9_image2.jpg"
       ]
     },
     {
@@ -1343,7 +1375,15 @@
       ],
       "verification_status": "verified_or_best_available",
       "notes": null,
-      "warnings": []
+      "warnings": [],
+      "curated_image_links": [
+        "https://www.sucsetloire-tourisme.fr/wp-content/uploads/2024/06/passerelle-gorges-du-lignon-haute-loire-1120x700.jpg",
+        "https://france3-regions.franceinfo.fr/image/msY8viWfOcXiLz8hVb8E6naloUc/4000x3000/regions/2026/04/01/69cd0cbaa6fee814727766.jpg",
+        "https://www.zoomdici.fr/sites/default/files/styles/medium/public/images/692133_Passerelle himalayenne.jpg?itok=lQIH5QvR",
+        "https://webzinevoyage.fr/wp-content/uploads/sites/11/2025/04/passerelle-himalayenne-gorges-lignon-vue-1200.jpg",
+        "https://res.cloudinary.com/easymountain/f_auto,q_auto,w_2240/v1694185666/do-web/prod/randonnee_passerelle_lignon_1_fd12e4ee65",
+        "https://www.ffrandonnee.fr/Media/Default/Images/actualites-post-MEP/loire-hte-pixabay-675x492.png"
+      ]
     },
     {
       "id": "sw06",
@@ -1372,6 +1412,14 @@
       "warnings": [
         "Baignade non surveillée et potentiellement interdite selon conditions",
         "Rochers glissants"
+      ],
+      "curated_image_links": [
+        "https://image.ville-data.com/solignac-sur-loire-cascade-de-la-beaume-1.JPG",
+        "https://c8.alamy.com/comp/JC7KJ9/france-haute-loire-43-entre-brignon-et-solignac-sur-loire-cascade-JC7KJ9.jpg",
+        "https://cdn.iris-etourism.io/uploads/le_puyenvelay_tourisme/sizes/854/127-31-30744447-800x520.webp",
+        "https://c8.alamy.com/compde/jc7kj7/frankreich-haute-loire-43-entre-brignon-et-solignac-sur-loire-cascade-de-la-beaume-frankreich-haute-loire-zwischen-brignon-und-solignac-sur-loire-b-jc7kj7.jpg",
+        "https://c8.alamy.com/compfr/jc7kjy/la-france-l-allier-43-entre-brignon-et-solignac-sur-loire-cascade-de-la-beaume-france-haute-loire-entre-brignon-et-solignac-sur-loire-b-jc7kjy.jpg",
+        "https://cdn-s-www.bienpublic.com/images/974D4616-429F-4F0D-B397-F9D483D056B8/NW_raw/sur-la-commune-de-solignac-sur-loire-la-cascade-de-la-beaume-fait-ecumer-les-eaux-de-la-riviere-beaume-(affluent-de-la-loire)-en-un-grand-saut-de-27-m-de-hauteur-photo-sylvain-gllm_unsplash-1707822738.jpg"
       ]
     },
     {
@@ -1402,6 +1450,14 @@
         "Rivière souvent très basse ou sèche en été",
         "Accès et stationnement sensibles",
         "Pas adapté à trois enfants de 4 ans"
+      ],
+      "curated_image_links": [
+        "https://www.gorgesdelardeche.fr/wp-content/uploads/2022/06/img_4740.jpg",
+        "https://www.gorges-ardeche-pontdarc.fr/content/uploads/2019/10/Marina-Geray-3-Copier-1-e1570525718549.jpg",
+        "https://gulwen.fr/wp-content/uploads/2025/09/Trou-de-la-Lune-Ibie-Credit-Barbara-Jarjat-Gulwen-Heide.jpg",
+        "https://www.gites-la-fontinelle.com/uploads/images/vallee-de-l-ibie-ardeche-le-trou-de-la-lune-682-m-1669913807.jpg",
+        "https://www.gorgesdelardeche.fr/wp-content/uploads/2022/06/ibie-1536x1024.jpg",
+        "https://i.pinimg.com/originals/2a/2e/6a/2a2e6a2e8be0a94b165a57f564c72a94.jpg"
       ]
     },
     {
@@ -1432,6 +1488,14 @@
         "Très éloigné",
         "Non surveillé",
         "Accès rocheux"
+      ],
+      "curated_image_links": [
+        "https://i.pinimg.com/originals/78/58/12/7858123cbbe70b7c6ca54e07a9d4b892.png",
+        "https://i.pinimg.com/originals/9d/d2/89/9dd289e2b538639030d2f420162e4ba0.png",
+        "https://www.alamy.com/aggregator-api/download?url=https://c8.alamy.com/comp/2BTP832/the-gorges-de-la-borne-in-the-ardeche-mountains-in-southern-france-2BTP832.jpg",
+        "https://www.ardeche-nature-photographies.com/photos/phototheque/previews/1505169187.jpg",
+        "https://i.pinimg.com/originals/a2/8d/b6/a28db67680c0b422af6bbea813506312.jpg",
+        "https://media02.stockfood.com/largepreviews/NDQyNDMyODM3/14272027-Aerial-of-the-Ardeche-Gorge-Gorges-de-l-Ardeche-Ardeche-Auvergne-Rhone-Alpes-France-Europe.jpg"
       ]
     },
     {
